@@ -1,0 +1,33 @@
+.container-img {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.container-body {
+    padding: 0 20px;
+}
+.block-text {
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+.text-red {
+    color: red;
+}
+.text-green {
+    color: green;
+}
+.img-small {
+    max-width: 350px;
+}
+.text-small {
+    font-size: 10px;
+}
+.code {
+    background: #dedcdc;
+}
