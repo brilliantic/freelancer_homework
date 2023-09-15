@@ -5,7 +5,7 @@
 [Lesson 6 - will be added soon]()<br>
 
 Next project (to be added)
-
+<br><br><br>
 <table>
   <tr>
     <td>Email:</td>
