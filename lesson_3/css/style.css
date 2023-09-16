@@ -13,8 +13,6 @@
     padding: 0 20px;
 }
 .block-text {
-    /* display: flex; */
-    /* justify-content: space-between; */
 }
 .text-red {
     color: red;
@@ -30,4 +28,34 @@
 }
 .code {
     background: #dedcdc;
+}
+
+
+/* Стилізація tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer; /* Курсор змінюється на вказівник */
+}
+
+/* Стилізація tooltip-тексту */
+.tooltip-text {
+    display: none;
+    position: absolute;
+    max-width: 300px;
+    top: 100%; /* Розташовуємо tooltip під елементом */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1;
+}
+
+/* При наведенні на .tooltip відображаємо .tooltip-text */
+.tooltip:hover .tooltip-text {
+    display: block;
+}
+
+.tooltip-img{
+    max-width: 300px;
 }
