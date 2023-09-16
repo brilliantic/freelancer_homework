@@ -1,4 +1,4 @@
-const link = document.getElementById("myLink");
+const link = document.getElementById("#myLink");
 
 // Додаємо подію для відображення tooltip при наведенні на посилання
 link.addEventListener("mouseover", () => {
