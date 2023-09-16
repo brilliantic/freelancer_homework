@@ -1,5 +1,14 @@
 @import url(reset.css);
 
+body {
+    font-family: serif;
+}
+ul li {
+    list-style-type: disc;
+}
+ol {
+    list-style-type: decimal;
+}
 h1 {
     height: 40px;
     margin: 15px 0;
@@ -13,13 +22,15 @@ h2 {
     border-bottom: 1px solid black;
 }
 p, li {
+    font-size: 16px;
+    font-weight: 400;
     margin-bottom: 10px;
-    letter-spacing: 0.5px;
     line-height: 18px;
 }
 li {
     margin-left: 20px;
 }
+
 .container-img {
     max-width: 1170px;
     margin: 0 auto;

@@ -68,6 +68,9 @@ a:hover {
 ul li {
     list-style-type: none;
 }
+ol {
+    list-style-type: none;
+}
 
 img {
     vertical-align: top;
