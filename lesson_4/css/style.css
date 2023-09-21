@@ -1,1 +1,58 @@
-@import url(reset.css);
+@import url(reset.css); 
+* {
+    color: brown;
+}
+
+a{
+    color: gray;
+}
+
+.accent{
+    color: darkorange;
+}
+
+[class*="__subtitle"]{
+    color:blue;
+}
+
+#first_place{
+    color: red;
+}
+
+div[class*="tion"]{
+    color: black;
+}
+
+a.link{
+    color: chartreuse;
+}
+
+.accent.centered{
+    color: deeppink;
+}
+
+
+.footer__text,
+.copyright__text {
+    color: midnightblue;
+}
+
+.footer p{
+    color: deepskyblue;
+}
+
+.gerdan *{
+    color: burlywood;
+}
+
+.footer .link{
+    color: darkorange;
+}
+
+.footer > p {
+    color: red;
+}
+
+.airplane__subtitle + p{
+    color: yellow;
+}
