@@ -1,0 +1,621 @@
+@import url(reset.css);
+@import url(fonts.css);
+
+body{
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #7d7d7d;
+    width: auto;
+}
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header,
+.footer{
+    margin-bottom: 50px;
+    background: url(../img/bg.jpg) 0 0/ cover   no-repeat;
+}
+.logo{
+    width: 80px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.nav{
+    text-align: center;
+    vertical-align: bottom;
+    font-family: "Poppins", sans-serif;
+    color: navy;
+    font-size: 30px;
+    display: inline-block;
+    padding-bottom: 45px;
+}
+.nav li{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 55px;
+} 
+.nav a:hover{
+    text-decoration: underline;
+    color: rgb(255, 0, 119);
+    font-size: 35px;
+    box-shadow: -2px -3px 10px rgb(204, 112, 112);
+}
+.nav a:hover::before {
+    content: ""; 
+    background-image: url(../img/icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+}
+.nav-link:active {
+    text-decoration: none;
+    background-color: #fbfbfb;
+    color: #080247;
+}
+.nav-link:visited{
+    color: #7d7d7d;
+}
+a:focus {
+    background-color: #40DDB6;
+}
+/* ======== target ========== */
+#business,
+#plan,
+#work,
+#jewellery{
+    display: none;
+}
+#business:target,
+#plan:target,
+#work:target,
+#jewellery:target{
+    display: block;
+}
+/* ================ Consulting Business ============= */
+
+.business {
+    max-width: 692px;
+    margin: 0 auto 100px;
+}
+.business__title,
+.business__subtitle,
+.business__lead,
+.artikle__subtitle {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.27;
+}
+.business__title{
+    font-size: 30px;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+.business__text {
+    line-height: 1.46;
+    margin-bottom: 42px;
+    text-align: justify;
+}
+.business__lead {
+    font-size: 20px;
+}
+.business__lead.blue{
+    color: #6B77E5;
+    margin-bottom: 12px;
+}
+.business__lead.green{
+    color: #40DDB6;
+    margin-bottom: 21px;
+}
+.business__block{
+    font-size: 0;
+    margin-bottom: 50px;
+}
+.business__content {
+    display: inline-block;
+    max-width: 332px;
+}
+.business__img{
+    max-width: 331px; 
+    margin-right: 29px;   
+}
+.business__subtitle,
+.artikle__subtitle {
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+.business__list li{
+    font-size: 18px;
+    min-height: 27px;
+}
+.business__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+.business__item::before,
+.card__subtitle::before{
+    content: "";
+    background: url(../img/business/vector.jpg) no-repeat;
+	width: 30px; 
+	height: 30px;
+	display: inline-block;
+    vertical-align: middle;
+	margin-right: 8px;
+    opacity: 0.4;
+}
+.business__item:hover{
+    color: #6B77E5;
+    text-decoration: underline;
+}
+.business__item:hover::before,
+.card__subtitle:hover::before{
+    opacity: 1;
+}
+
+/* ============ Plan =============== */
+.plan {
+    max-width: 675px;
+    margin: 0 auto 100px;
+}
+.plan__lead,
+.work__lead{
+    color: #37393F;
+    font-weight: 500;   
+    line-height: 1.22;
+    margin-bottom: 16px;
+}
+.plan__lead::before,
+.work__lead::before{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #40DDB6;
+    margin-right: 6px;
+}
+.plan__title,
+.work__title {
+    color: #37393F;
+    font-family: "Poppins";
+    font-size: 40px;    
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.plan__title{
+    max-width: 62%;
+}
+.plan__text p:not(:last-child){
+    margin-bottom: 16px;
+}
+.plan__text,
+.card__text{
+    line-height: 1.46; 
+    margin-bottom: 48px;
+}
+.card {
+    border: 1px solid #E3E3E3;
+    max-width: 675px;
+    padding: 28px 41px 28px 38px;
+}
+.card:not(:last-child) {
+    margin-bottom: 31px;
+}
+.card:last-of-type {
+    margin-bottom: 48px;
+}
+.card__subtitle {
+    color: #37393F;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+.card__subtitle::before{
+    padding-right: 19px;
+}
+.plan__button {
+    width: 200px;
+    height: 65px;
+    background: #6B77E5;
+    color: #fff;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.plan__button:hover{
+    border: 2px solid #37393F;
+    border-radius: 90% 13% 90% 13% / 10% 80% 15% 90%;
+    opacity: 0.8;
+    box-shadow: 5px 5px 5px #7d7d7d;
+    background: linear-gradient(354deg, rgba(55,57,63,1) 0%, rgba(107,119,229,1) 59%, rgba(255,255,255,1) 100%);
+}
+
+/* =============== Work ´´´´´´´´´´´´´´´´ */
+.work {
+    max-width: 1220px;
+    margin: 0 auto 100px;
+}
+.work__lead {
+    text-align: center;
+}
+.work__title {
+    text-align: center;
+    margin-bottom: 77px;
+}
+.artikle__container{
+    font-size: 0;
+}
+.artikle {
+    display: inline-block;
+    max-width: 386px;
+    background: #F4F4F4;
+    padding-top: 58px;
+    padding-bottom: 58px;
+    text-align: center;
+    font-size: 18px;
+}
+.artikle:not(:last-child){
+    margin-right: 31px;
+}
+.artikle__subtitle {
+    margin-bottom: 16px;
+}
+.artikle__text {
+    font-weight: 500;
+    line-height: 1.46;
+    margin-bottom: 37px;
+}
+.artikle__link{
+    color: #6B77E5;
+    font-weight: 600;
+}
+.artikle__link:hover{
+    text-decoration: underline;
+    color: #37393F;
+}
+.artikle__subtitle::before{
+    width: 72px;
+    height: 72px;
+    display: block;
+    margin-top: -94px;
+    margin-left: 157px;
+    margin-bottom: 22px;
+    content: '';
+    background-size:72px;
+    background-color:#ccc;
+    background-position:center;
+    border-radius:100%;
+}
+.artikle__subtitle.first::before{
+    background: url(../img/work/data.jpg) no-repeat;
+}
+.artikle__subtitle.second::before{
+    background: url(../img/work/puzzle.jpg) no-repeat;  
+}
+.artikle__subtitle.third::before{
+    background: url(../img/work/done.jpg) no-repeat;  
+}
+.artikle__subtitle:hover::before{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+}
+.artikle__subtitle.first:hover::before{
+    background: url(../img/work/hover-data.jpg) no-repeat;
+}
+.artikle__subtitle.second:hover::before{
+    background: url(../img/work/hover-puzzle.jpg) no-repeat;
+}
+.artikle__subtitle.third:hover::before{
+    background: url(../img/work/hover-done.jpg) no-repeat;
+}
+/* ========= Jewellery ========== */
+.jewellery {
+    max-width: 1214px;
+    margin: 0 auto 100px;
+    color: #000;
+    font-family: "Cormorant Infant";
+    font-weight: 700;
+}
+.jewellery__title {
+    max-width: 480px;
+    font-size: 60px;
+    line-height: 1.15; 
+    vertical-align: top;
+    padding-top: 180px;
+    display: inline-block;
+}
+.jewellery__title::after{
+    content: "";
+    display: block;
+    width: 304px;
+    height: 3px;
+    background: #78473B;
+    margin-top: 13px;
+}
+.jewellery__block-right,
+.jewellery__block-left {
+    display: inline-block;
+    max-width: 391px;
+}
+[class*="foto-"]:hover{
+    box-shadow: -9px -9px 0 0 #dfae8d, -9px -9px 0 1px black;
+}
+.jewellery__block-left {
+    margin-right: 45px;
+    vertical-align: top;
+}
+.foto-left {
+    margin-top: 60px;
+    box-shadow: -9px -9px 0 0 #fff, -9px -9px 0 1px black;
+    margin-bottom: 25px;
+}
+.jewellery__text {
+    font-size: 24px;
+    line-height: 1.4;
+}
+.jewellery__subtitle {
+    font-size: 46px;
+    line-height: 1.13;
+    max-width: 339px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.foto-right {
+    box-shadow: -9px -9px 0 0 #fff, -9px -9px 0 1px black;
+    margin-bottom: 25px;
+}
+/* ======== Praktikum ============ */
+/* Появление блока или изображения */
+.praktikum{
+    margin: 0 auto 50px;
+}
+.block-hover,
+.praktika h3,
+.list-style {
+    background-color: #000;
+    color: white;
+    font-size: 20px;
+    border: 10px solid rgb(217, 243, 21);
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+.block-hover :not(:last-child){
+    margin-bottom: 30px;
+}
+.image{
+    display:none;
+}
+.block-hover:hover{
+    opacity: 0.7;
+}
+.block-hover:hover .link {
+    color: rgb(218, 252, 30);
+}
+.block-hover:hover p:last-of-type {
+    color: rgb(241, 62, 211);
+}
+.block-hover:hover .image {
+    display: block;
+    text-align: center;
+}
+/* ========= Оформление списков ======== */
+.praktika span{
+    text-decoration: line-through;
+    color: #40DDB6;
+}
+.liste__text p:nth-child(2) {
+	background-color: #71f226;
+}
+.liste{
+    max-width: 900px;
+    margin: 0 auto 50px;
+    font-size: 22px;
+    color: black;
+}
+.liste li:nth-child(7) a{
+    color: deeppink;
+    font-size: 40px;
+}
+.liste li:nth-child(odd){
+    background-color: #db9191;
+}
+.liste li:nth-child(even){
+    background-color: #eb6421;
+}
+/*  ===== Стилизованный список */
+.list-style li::before {
+    background: url(../img/work/done.jpg) center no-repeat;
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 10px;
+    transition: all 0.8s ease 0s;
+}
+.list-style li:hover::before {
+    transform: scale(1.5);
+}
+.list-style li:hover{
+    text-decoration: underline;
+    color: fuchsia;
+}
+/* ============ subliste ============= */
+.subliste,
+.nummered{
+    margin: 0 auto 50px;
+    max-width: 300px;
+    font-family: "Poppins",sans-serif;
+    font-size: 40px;
+}
+ul ul {
+	display: none;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+ul li:hover ul {
+	display: block;
+    text-decoration: underline;
+}
+.subliste__item:not(:last-child){
+    margin-bottom: 20px;
+}
+.subliste__item::before{
+    content: "";
+    background: url(../img/praktikum/marker.jpg) no-repeat;
+    background-size: 40px 40px; 
+    min-height: 40px;
+    margin-right: 30px;
+    width: 40px;    
+    display: inline-block;
+}
+.subliste__item li::before{
+    content: "";
+    background: url(../img/praktikum/green-marker.png) no-repeat;
+    background-size: 20px 20px; 
+    min-height: 20px;
+    width: 20px;    
+    display: inline-block;
+    margin-right: 20px;
+}
+.subliste__item li{
+    font-size: 30px;
+    color: green;
+}
+.subliste__item li:not(:last-child){
+    margin-bottom: 20px;
+}
+/* =========== Свои цифры для ОЛ ============ */
+.nummered ol{
+    counter-reset: item;
+}
+.nummered li:not(:last-child){
+    margin-bottom: 20px;
+}
+.nummered li:hover{
+    text-decoration: underline;
+    color: blueviolet;
+}
+.nummered-item p::before{
+    counter-increment: item;
+	content: counter(item)". ";
+	display: inline-block;
+	margin-right: 15px;
+	color: violet;
+}
+
+/* ======== Игра ===========*/
+.game {
+    max-width: 1200px;
+    margin: 100px auto;
+    font-size: 0;
+    background-image: url(../img/game/bg.jpg);
+}
+[class*="part"] {
+    visibility: hidden;
+    display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 200px;
+}
+.first-step {
+    background-color: #7d7d7d;
+    width: 200px;
+    height: 200px;
+    color: #aedc30;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 75px;
+}
+.first-step:hover{
+    color: white;
+    text-decoration: underline;
+    font-size: 60px;
+    text-shadow: 5px 5px 10px #000;
+}
+.part1{
+    background-color: #40DDB6;
+}
+.part2{
+    width: 500px;
+    background-color: #8e2a99;
+}
+.part3{
+    width: 300px;
+    background-color: #aedc30;
+}
+.part4{
+    height: 500px;
+    background-color: #462d3f;
+}
+.part5{
+width: 100%;
+background-color: #171391;
+}
+.part6{
+    width: 150px;
+    height: 350px;
+    background-color: deeppink;
+}
+.part7{
+    height: 100px;
+    width: 1130px;
+    background-color:lightsalmon;
+}
+.part8{
+    width: 70px;
+    height: 300px;
+    background-color:saddlebrown;
+}
+.part9{
+    width: 1120px;
+    height: 30px;
+    float: right;
+    background-color:rgb(243, 10, 10);
+}
+.part10{
+    width: 80px;
+    height: 80px;
+    background-color: orange;
+}
+.part11{
+    background-image: url(../img/game/end.jpeg);
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 750px;
+    background-size: 1200px;
+    /* margin-left: 200px; */
+}
+.first-step:hover + .part1,
+.part1:hover,
+.part1:hover ~ .part2,
+.part2:hover,
+.part2:hover ~ .part3,
+.part3:hover,
+.part3:hover ~ .part4,
+.part4:hover,
+.part4:hover ~ .part5,
+.part5:hover,
+.part5:hover ~ .part6,
+.part6:hover,
+.part6:hover ~ .part7,
+.part7:hover,
+.part7:hover ~ .part8,
+.part8:hover,
+.part8:hover ~ .part9,
+.part9:hover,
+.part9:hover ~ .part10,
+.part10:hover,
+.part10:hover ~ .part11,
+.part11:hover {
+    visibility: visible;
+}
