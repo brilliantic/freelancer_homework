@@ -3,6 +3,11 @@
 [Lesson 4](https://brilliantic.github.io/freelancer_homework/lesson_4)<br>
 [Lesson 5](https://brilliantic.github.io/freelancer_homework/lesson_5)<br>
 [Lesson 6](https://brilliantic.github.io/freelancer_homework/lesson_6)<br>
+[Lesson 7](https://brilliantic.github.io/freelancer_homework/lesson_7)<br>
+[Lesson 8](https://brilliantic.github.io/freelancer_homework/lesson_8)<br>
+[Lesson 9](https://brilliantic.github.io/freelancer_homework/lesson_9)<br>
+[Lesson 10](https://brilliantic.github.io/freelancer_homework/lesson_10)<br>
+[Lesson 11](https://brilliantic.github.io/freelancer_homework/lesson_11)<br>
 Next project (to be added)
 
 <br><br><br>
