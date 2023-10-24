@@ -219,8 +219,6 @@ body {
     background: #40ddb6;
 }
 /* ============================== */
-
-/* ============================== */
 .first,
 .second,
 .third,
@@ -256,7 +254,8 @@ body {
     box-shadow: 0 0.8em 0.8em -0.4em #40ddb6;
     transform: translateY(-0.25em);
 }
-.box__item.center:hover {
+/* Кожен другий box з цим кольором */
+.box__item:nth-child(2n):hover {
     box-shadow: 0 0.8em 0.8em -0.4em #6b77e5;
 }
 .box__item {
@@ -293,7 +292,7 @@ body {
     text-align: center;
     font-weight: 600;
     text-transform: capitalize;
-    transition: letter-spacing 0.5s ease;
+    transition: color 0.5s ease, letter-spacing 0.5s ease;
 }
 .box__item a:hover {
     text-decoration-line: underline;
@@ -312,3 +311,99 @@ body {
     line-height: 127%; /* 31.75px */
     margin-bottom: 16px;
 }
+/* ============================== */
+.fourth {
+    font-family: "Cormorant Infant";
+    font-size: 0;
+}
+.block-4 {
+}
+.fourth__wrapper {
+    margin: 0 auto;
+    max-width: 1214px;
+    display: table;
+    height: 100%;
+}
+.fourth__title {
+    display: inline-block;
+    max-width: 480px;
+    color: #000;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 115%; /* 69px */
+    display: table-cell;
+    vertical-align: middle;
+}
+.fourth__title:after {
+    content: "";
+    width: 62%;
+    height: 3px;
+    background: #78473b;
+    margin-bottom: 40px;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+.fourth__title:hover:after {
+    width: 95%;
+    height: 5px;
+}
+.product-fourth {
+    display: inline-block;
+    display: table;
+}
+.product-left {
+    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
+}
+.product-wrap__img {
+    border: 1px solid #000;
+    max-width: 336px;
+    max-height: 383px;
+}
+.product-left img,
+.product-right img {
+    margin-bottom: 25px;
+    margin: 9px -10px -9px 10px;
+    transition: margin 0.3s ease;
+}
+.product-left img:hover,
+.product-right img:hover {
+    margin: 0;
+}
+.product-right__name,
+.product-left__name {
+    margin-top: 25px;
+}
+.product-right__name:hover,
+.product-left__name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.product-right {
+    display: inline-block;
+    margin-left: 45px;
+}
+.product-right__title {
+    color: #000;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 113%; /* 51.98px */
+    margin-bottom: 31px;
+    max-width: 345px;
+}
+.product-right__title span {
+    display: block;
+}
+.product-left__price,
+.product-left__name,
+.product-right__name,
+.product-right__price {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+}
+.product-right__name {
+    margin-bottom: 4px;
+}
+/* ============================== */
