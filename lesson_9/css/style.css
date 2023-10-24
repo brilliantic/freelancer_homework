@@ -407,3 +407,132 @@ body {
     margin-bottom: 4px;
 }
 /* ============================== */
+.game__wrapper {
+    max-width: 1200px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 3px solid #000;
+    background-color: #7d7d7d;
+}
+.game__body {
+    display: inline-block;
+    font-size: 0;
+}
+.game__body img {
+    width: 1000px;
+}
+.line {
+    display: inline-block;
+    height: 30px;
+    background-color: #d2dc16;
+    visibility: hidden;
+}
+.game__start {
+    width: 30px;
+    background-color: #298814;
+    vertical-align: top;
+    visibility: visible;
+}
+.game__item-1 {
+    width: 150px;
+    vertical-align: top;
+}
+.game__item-2 {
+    width: 30px;
+    height: 150px;
+    vertical-align: top;
+}
+.game__item-3 {
+    width: 180px;
+    height: 30px;
+    vertical-align: top;
+    margin-top: 120px;
+}
+.game__item-4 {
+    width: 30px;
+    height: 100px;
+    vertical-align: top;
+    margin-top: 50px;
+}
+.game__item-5 {
+    width: 250px;
+    height: 20px;
+    vertical-align: top;
+    margin-top: 50px;
+}
+.game__item-6 {
+    width: 20px;
+    height: 150px;
+    vertical-align: top;
+    margin-top: 50px;
+}
+.game__item-7 {
+    width: 400px;
+    height: 20px;
+    vertical-align: top;
+    margin-top: 180px;
+}
+.game__item-8 {
+    width: 20px;
+    height: 100px;
+    vertical-align: bottom;
+    margin-top: 180px;
+}
+.game__item-9 {
+    width: 450px;
+    height: 20px;
+    vertical-align: top;
+    margin-left: 660px;
+}
+.game__item-10 {
+    width: 10px;
+    height: 50px;
+    margin-left: 660px;
+}
+.game__item-11 {
+    width: 250px;
+    height: 10px;
+}
+.game__item-12 {
+    width: 10px;
+    height: 150px;
+    vertical-align: top;
+    margin-top: 40px;
+}
+.game__item-13 {
+    width: 120px;
+    height: 7px;
+    vertical-align: bottom;
+}
+.game__item-14 {
+    width: 7px;
+    height: 50px;
+    vertical-align: bottom;
+    margin-bottom: -43px;
+}
+.game__item-15 {
+    width: 7px;
+    height: 7px;
+    vertical-align: bottom;
+    margin-bottom: -43px;
+}
+.game__item-16 {
+    width: 60px;
+    height: 60px;
+    vertical-align: bottom;
+    margin-bottom: -70px;
+    background-color: red;
+}
+.game__item-17 {
+    background: url(../img/win.jpg) bottom no-repeat;
+    width: 1000px;
+    height: 500px;
+    margin: 100px 0 0 80px;
+    visibility: hidden;
+}
+.line:hover + .line,
+.line:hover {
+    visibility: visible;
+}
+/* ============================== */
