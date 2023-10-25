@@ -227,7 +227,7 @@ body {
 }
 .second__btn {
     width: 200px;
-    height: 65px;
+    min-height: 65px;
     color: #fff;
     text-align: center;
     font-weight: 600;
