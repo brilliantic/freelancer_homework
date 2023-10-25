@@ -231,14 +231,15 @@ body {
 .second__btn {
     width: 200px;
     min-height: 65px;
-    padding: 10px 15px;
     color: #fff;
     text-align: center;
     font-weight: 600;
     text-transform: capitalize;
+    padding: 10px 15px;
     background: #6b77e5;
     transition: 0.5s ease;
 }
+
 .second__btn:hover {
     background: #40ddb6;
 }
@@ -583,7 +584,7 @@ body {
 }
 .practice__text p:nth-child(even):hover,
 .practice__text p:nth-child(odd):hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Задайте бажаний стиль тіні */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Задайте бажаний стиль тіні */
 }
 .practice__text p::before,
 .practice__text p::after {
