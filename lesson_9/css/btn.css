@@ -46,30 +46,20 @@
     --hover: #ffbdc2;
 }
 .close {
-    --color: #ff7f82;
+    --color: #ffbdc2;
     --hover: #ff7f82;
 }
 .raise {
-    --color: #ffa260;
+    --color: #ff7f82;
     --hover: #ff994e;
 }
 .up {
-    --color: #e4cb58;
-    --hover: #fcdb8a;
+    --color: #ff994e;
+    --hover: #e4cb58;
 }
 .offset {
     --color: #19bc8b;
     --hover: #43cda5;
-}
-button {
-    color: var(--color);
-    transition: 0.25s;
-
-    &:hover,
-    &:focus {
-        border-color: var(--hover);
-        color: #fff;
-    }
 }
 .btn__header-item {
     color: var(--color);
@@ -88,8 +78,4 @@ button {
     line-height: 1;
     margin: 0.5em;
     padding: 1em 2em;
-}
-code {
-    color: #e4cb58;
-    font: inherit;
 }

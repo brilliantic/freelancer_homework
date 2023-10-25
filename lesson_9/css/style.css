@@ -23,6 +23,28 @@ body {
     max-width: 1440px;
     margin: 0 auto;
 }
+/* ============================== */
+
+.first,
+.second,
+.third,
+.fourth,
+.practice,
+.game,
+.visited,
+.visited-2 {
+    display: none;
+}
+.first:target,
+.second:target,
+.third:target,
+.fourth:target,
+.practice:target,
+.game:target,
+.visited:target,
+.visited-2:target {
+    display: block;
+}
 .header__wrapper {
     margin-bottom: 50px;
 }
@@ -219,19 +241,6 @@ body {
     background: #40ddb6;
 }
 /* ============================== */
-.first,
-.second,
-.third,
-.fourth {
-    display: none;
-}
-.first:target,
-.second:target,
-.third:target,
-.fourth:target {
-    display: block;
-}
-/* ============================== */
 .third {
     text-align: center;
     margin: 0 auto;
@@ -315,8 +324,6 @@ body {
 .fourth {
     font-family: "Cormorant Infant";
     font-size: 0;
-}
-.block-4 {
 }
 .fourth__wrapper {
     margin: 0 auto;
@@ -414,6 +421,14 @@ body {
     padding: 10px;
     border: 3px solid #000;
     background-color: #7d7d7d;
+}
+.game__title {
+    color: #000;
+    font-family: "Cormorant Infant";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 155%;
+    text-align: center;
 }
 .game__body {
     display: inline-block;
@@ -536,3 +551,55 @@ body {
     visibility: visible;
 }
 /* ============================== */
+.practice {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.practice__title {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: 700;
+    line-height: 155%;
+    text-align: center;
+}
+.practice__text p {
+    text-align: center;
+    padding: 5px;
+}
+.practice__text p:nth-child(even) {
+    background-color: lightblue;
+}
+.practice__text p:nth-child(odd) {
+    background-color: lightgreen;
+}
+.practice__text p::before,
+.practice__text p::after{
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.practice__text p::before {
+    margin-right: 10px;
+
+}
+.practice__text p::after{
+    margin-left: 10px;
+}
+.practice__visited:visited {
+    color: rgb(157, 5, 5);
+}
+.practice__text p span {
+    color: #000;
+    padding: 2px;
+}
+
+
+.block-visited__text a {
+    color: rgb(206, 228, 9);
+    background-color: #7d7d7d;
+    padding: 4px;
+    border-radius: 10px;
+}
