@@ -565,6 +565,9 @@ body {
     text-align: center;
     padding: 5px;
 }
+.practice__text p a {
+    color: blue;
+}
 .practice__text p a:hover {
     text-decoration: underline;
 }
@@ -574,6 +577,10 @@ body {
 .practice__text p:nth-child(odd) {
     background-color: lightgreen;
 }
+.practice__text p:nth-child(even):hover,
+.practice__text p:nth-child(odd):hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Задайте бажаний стиль тіні */
+}
 .practice__text p::before,
 .practice__text p::after {
     content: "";
@@ -581,6 +588,10 @@ body {
     height: 12px;
     border-radius: 50%;
     background-color: #000;
+}
+.practice__text p:hover::before,
+.practice__text p:hover::after {
+    border-radius: 0;
 }
 .practice__text p::before {
     margin-right: 10px;
@@ -604,7 +615,6 @@ body {
 }
 
 .block-visited {
-
     max-width: 600px;
     margin: 0 auto;
 }
