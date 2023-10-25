@@ -225,6 +225,9 @@ body {
     line-height: 146.187%; /* 26.314px */
     margin-left: 38px; /* ширина іконки + її margin */
 }
+.list__text p:not(:last-child) {
+    margin-bottom: 15px;
+}
 .second__btn {
     width: 200px;
     min-height: 65px;
