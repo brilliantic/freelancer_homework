@@ -228,6 +228,7 @@ body {
 .second__btn {
     width: 200px;
     min-height: 65px;
+    padding: 10px 15px;
     color: #fff;
     text-align: center;
     font-weight: 600;
