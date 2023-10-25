@@ -31,8 +31,7 @@ body {
 .fourth,
 .practice,
 .game,
-.visited,
-.visited-2 {
+.visited {
     display: none;
 }
 .first:target,
@@ -41,8 +40,7 @@ body {
 .fourth:target,
 .practice:target,
 .game:target,
-.visited:target,
-.visited-2:target {
+.visited:target {
     display: block;
 }
 .header__wrapper {
@@ -567,6 +565,9 @@ body {
     text-align: center;
     padding: 5px;
 }
+.practice__text p a:hover {
+    text-decoration: underline;
+}
 .practice__text p:nth-child(even) {
     background-color: lightblue;
 }
@@ -574,7 +575,7 @@ body {
     background-color: lightgreen;
 }
 .practice__text p::before,
-.practice__text p::after{
+.practice__text p::after {
     content: "";
     width: 12px;
     height: 12px;
@@ -583,9 +584,8 @@ body {
 }
 .practice__text p::before {
     margin-right: 10px;
-
 }
-.practice__text p::after{
+.practice__text p::after {
     margin-left: 10px;
 }
 .practice__visited:visited {
@@ -596,10 +596,26 @@ body {
     padding: 2px;
 }
 
-
 .block-visited__text a {
     color: rgb(206, 228, 9);
     background-color: #7d7d7d;
     padding: 4px;
     border-radius: 10px;
+}
+
+.block-visited {
+
+    max-width: 600px;
+    margin: 0 auto;
+}
+.block-visited__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: 700;
+    line-height: 155%;
+    text-align: center;
+}
+.block-visited__text {
+    text-align: center;
 }
