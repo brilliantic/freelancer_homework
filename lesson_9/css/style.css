@@ -211,6 +211,11 @@ body {
 .list__second-body {
     border: 1px solid #e3e3e3;
     padding: 28px 41px 28px 39px;
+    transition: box-shadow .5s ease, border .5s ease;
+}
+.list__second-body:hover {
+    border: 1px solid #787676;
+    box-shadow: 0 0.8em 0.8em -0.4em #6b77e5;
 }
 .second__list li:not(:last-child) {
     margin-bottom: 31px;
@@ -219,6 +224,9 @@ body {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 12px;
+}
+.list__title::before {
+    opacity: 1;
 }
 .list__text {
     color: #7d7d7d;
@@ -233,6 +241,7 @@ body {
     min-height: 65px;
     color: #fff;
     text-align: center;
+    cursor: pointer;
     font-weight: 600;
     text-transform: capitalize;
     padding: 10px 15px;
