@@ -43,7 +43,7 @@ body {
 .visited:target {
     display: block;
 }
-.header__wrapper {
+.header {
     margin-bottom: 50px;
 }
 .header__wrapper,
@@ -120,7 +120,7 @@ body {
     line-height: 127%; /* 25.4px */
     margin-bottom: 12px;
 }
-.block__top-text {
+.first__top {
     margin-bottom: 40px;
 }
 .block__top-text p:not(:last-child) {
@@ -211,7 +211,7 @@ body {
 .list__second-body {
     border: 1px solid #e3e3e3;
     padding: 28px 41px 28px 39px;
-    transition: box-shadow .5s ease, border .5s ease;
+    transition: box-shadow 0.5s ease, border 0.5s ease;
 }
 .list__second-body:hover {
     border: 1px solid #787676;
@@ -231,20 +231,22 @@ body {
 .list__text {
     color: #7d7d7d;
     line-height: 146.187%; /* 26.314px */
-    margin-left: 38px; /* ширина іконки + її margin */
+    padding-left: 38px; /* ширина іконки + її margin */
 }
+
 .list__text p:not(:last-child) {
     margin-bottom: 15px;
 }
 .second__btn {
     width: 200px;
     min-height: 65px;
+    padding: 40px 0 0 0;
     color: #fff;
     text-align: center;
     cursor: pointer;
     font-weight: 600;
     text-transform: capitalize;
-    padding: 10px 15px;
+    padding: 22px 15px;
     background: #6b77e5;
     transition: 0.5s ease;
 }
@@ -259,17 +261,9 @@ body {
 }
 .third__info {
     text-align: center;
-}
-.block-3 {
-}
-.third__sub-title {
-}
-.sub-title {
-}
-.third__title {
     margin-bottom: 77px; /* 41+ половина icon */
 }
-.third__box {
+.third__title {
 }
 .box__item:hover {
     box-shadow: 0 0.8em 0.8em -0.4em #40ddb6;
