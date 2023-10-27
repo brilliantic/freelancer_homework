@@ -1,0 +1,639 @@
+@import url(fonts.css);
+@import url(reset.css);
+@import url(btn.css);
+
+html,
+body {
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #7d7d7d;
+    width: auto;
+}
+.wraper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* ============================== */
+
+.first,
+.second,
+.third,
+.fourth,
+.practice,
+.game,
+.visited {
+    display: none;
+}
+.first:target,
+.second:target,
+.third:target,
+.fourth:target,
+.practice:target,
+.game:target,
+.visited:target {
+    display: block;
+}
+.header {
+    margin-bottom: 50px;
+}
+.header__wrapper,
+.footer__wrapper {
+    width: 100%;
+    min-height: 80px;
+    background: url(../img/repeat.jpg) 0 0 / cover;
+    text-align: center;
+    padding: 5px;
+}
+.footer__wrapper {
+    margin-top: 50px;
+}
+.header__text {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.header__text span {
+    display: block;
+    font-weight: 700;
+    line-height: 1.4;
+    background: linear-gradient(45deg, #ff2600, #2fff00, #00f2ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: letter-spacing 0.5s ease;
+}
+.header__text span:hover {
+    letter-spacing: 6px;
+}
+/* ============================== */
+.header__btn {
+    display: block;
+}
+.btn__header {
+    cursor: pointer;
+}
+/* ============================== */
+.title {
+    color: #37393f;
+    font-family: "Poppins";
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 127%; /* 38.1px */
+    margin-bottom: 4px;
+}
+.sub-title {
+    color: #37393f;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.text {
+    line-height: 146.187%; /* 26.314px */
+}
+.first {
+    max-width: 692px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+.top__text {
+    margin-bottom: 42px;
+}
+.top__text p:not(:last-child) {
+    margin-bottom: 15px;
+}
+.block__top-title {
+    color: #6b77e5;
+}
+.title-color {
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 127%; /* 25.4px */
+    margin-bottom: 12px;
+}
+.first__top {
+    margin-bottom: 40px;
+}
+.block__top-text p:not(:last-child) {
+    margin-bottom: 15px;
+}
+.main__first {
+    margin-bottom: 50px;
+}
+.main__image {
+    display: inline-block;
+    margin-right: 15px;
+    max-width: 331px;
+    vertical-align: top;
+}
+.main__image img {
+    width: 100%;
+}
+.main__block {
+    display: inline-block;
+}
+.block__main {
+    display: inline-block;
+    max-width: 332px;
+}
+.main__title {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.main__sub-title {
+    color: #40ddb6;
+    margin-bottom: 21px;
+}
+.main__list li:not(:last-child) {
+    margin-bottom: 30px;
+}
+.list__item::before,
+.list__title::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/icons/vector.png) 0 0 no-repeat;
+    margin-right: 8px;
+    vertical-align: -7px;
+    opacity: 0.2;
+    transition: opacity 0.5s ease;
+}
+.list__item:hover::before,
+.list__title:hover::before {
+    opacity: 1;
+}
+.footer__text p:not(:last-child) {
+    margin-bottom: 15px;
+}
+/* ============================== */
+.second {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.second__sub-title::before,
+.third__sub-title::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: #40ddb6;
+    margin-right: 6px;
+}
+.second__title,
+.third__title {
+    color: #37393f;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 121%; /* 48.4px */
+    margin-bottom: 10px;
+}
+.second__text {
+    margin-bottom: 48px;
+}
+.second__text p:not(:last-child) {
+    margin-bottom: 16px;
+}
+.second__list {
+    margin-bottom: 48px;
+}
+.list__second-body {
+    border: 1px solid #e3e3e3;
+    padding: 28px 41px 28px 39px;
+    transition: box-shadow 0.5s ease, border 0.5s ease;
+}
+.list__second-body:hover {
+    border: 1px solid #787676;
+    box-shadow: 0 0.8em 0.8em -0.4em #6b77e5;
+}
+.second__list li:not(:last-child) {
+    margin-bottom: 31px;
+}
+.list__title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.list__title::before {
+    opacity: 1;
+}
+.list__text {
+    color: #7d7d7d;
+    line-height: 146.187%; /* 26.314px */
+    padding-left: 38px; /* ширина іконки + її margin */
+}
+
+.list__text p:not(:last-child) {
+    margin-bottom: 15px;
+}
+.second__btn {
+    width: 200px;
+    min-height: 65px;
+    padding: 40px 0 0 0;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 22px 15px;
+    background: #6b77e5;
+    transition: 0.5s ease;
+}
+
+.second__btn:hover {
+    background: #40ddb6;
+}
+/* ============================== */
+.third {
+    text-align: center;
+    margin: 0 auto;
+}
+.third__info {
+    text-align: center;
+    margin-bottom: 77px; /* 41+ половина icon */
+}
+.third__title {
+}
+.box__item:hover {
+    box-shadow: 0 0.8em 0.8em -0.4em #40ddb6;
+    transform: translateY(-0.25em);
+}
+/* Кожен другий box з цим кольором */
+.box__item:nth-child(2n):hover {
+    box-shadow: 0 0.8em 0.8em -0.4em #6b77e5;
+}
+.box__item {
+    max-width: 386px;
+    display: inline-block;
+    background: #f4f4f4;
+    padding: 58px 43px;
+    transition: 0.25s;
+}
+.box__item::before {
+    content: "";
+    width: 72px;
+    height: 72px;
+    margin: -94px auto 36px;
+}
+.box__item.left::before {
+    background: url(../img/icons/Icon-1.svg) center/cover no-repeat;
+}
+.box__item.center::before {
+    background: url(../img/icons/Icon-2.svg) center/cover no-repeat;
+}
+.box__item.right::before {
+    background: url(../img/icons/Icon-3.svg) center/cover no-repeat;
+}
+.box__item p {
+    color: #7d7d7d;
+    text-align: center;
+    font-weight: 400;
+    line-height: 146.187%; /* 26.314px */
+    margin-bottom: 37px;
+}
+.box__item a {
+    color: #6b77e5;
+    text-align: center;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: color 0.5s ease, letter-spacing 0.5s ease;
+}
+.box__item a:hover {
+    text-decoration-line: underline;
+    color: #40ddb6;
+    letter-spacing: 3px;
+}
+.box__item:not(:last-child) {
+    margin-right: 41px;
+}
+.box__item-title {
+    color: #37393f;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 127%; /* 31.75px */
+    margin-bottom: 16px;
+}
+/* ============================== */
+.fourth {
+    font-family: "Cormorant Infant";
+    font-size: 0;
+}
+.fourth__wrapper {
+    margin: 0 auto;
+    max-width: 1214px;
+    display: table;
+    height: 100%;
+}
+.fourth__title {
+    display: inline-block;
+    max-width: 480px;
+    color: #000;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 115%; /* 69px */
+    display: table-cell;
+    vertical-align: middle;
+}
+.fourth__title:after {
+    content: "";
+    width: 62%;
+    height: 3px;
+    background: #78473b;
+    margin-bottom: 40px;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+.fourth__title:hover:after {
+    width: 95%;
+    height: 5px;
+}
+.product-fourth {
+    display: inline-block;
+    display: table;
+}
+.product-left {
+    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
+}
+.product-wrap__img {
+    border: 1px solid #000;
+    max-width: 336px;
+    max-height: 383px;
+}
+.product-left img,
+.product-right img {
+    margin-bottom: 25px;
+    margin: 9px -10px -9px 10px;
+    transition: margin 0.3s ease;
+}
+.product-left img:hover,
+.product-right img:hover {
+    margin: 0;
+}
+.product-right__name,
+.product-left__name {
+    margin-top: 25px;
+}
+.product-right__name:hover,
+.product-left__name:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.product-right {
+    display: inline-block;
+    margin-left: 45px;
+}
+.product-right__title {
+    color: #000;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 113%; /* 51.98px */
+    margin-bottom: 31px;
+    max-width: 345px;
+}
+.product-right__title span {
+    display: block;
+}
+.product-left__price,
+.product-left__name,
+.product-right__name,
+.product-right__price {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+}
+.product-right__name {
+    margin-bottom: 4px;
+}
+/* ============================== */
+.game__wrapper {
+    max-width: 1200px;
+    min-height: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 3px solid #000;
+    background-color: #7d7d7d;
+}
+.game__title {
+    color: #000;
+    font-family: "Cormorant Infant";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 155%;
+    text-align: center;
+}
+.game__body {
+    display: inline-block;
+    font-size: 0;
+}
+.game__body img {
+    width: 1000px;
+}
+.line {
+    display: inline-block;
+    height: 30px;
+    background-color: #d2dc16;
+    visibility: hidden;
+}
+.game__start {
+    width: 30px;
+    background-color: #298814;
+    vertical-align: top;
+    visibility: visible;
+}
+.game__item-1 {
+    width: 150px;
+    vertical-align: top;
+}
+.game__item-2 {
+    width: 30px;
+    height: 150px;
+    vertical-align: top;
+}
+.game__item-3 {
+    width: 180px;
+    height: 30px;
+    vertical-align: top;
+    margin-top: 120px;
+}
+.game__item-4 {
+    width: 30px;
+    height: 100px;
+    vertical-align: top;
+    margin-top: 50px;
+}
+.game__item-5 {
+    width: 250px;
+    height: 20px;
+    vertical-align: top;
+    margin-top: 50px;
+}
+.game__item-6 {
+    width: 20px;
+    height: 150px;
+    vertical-align: top;
+    margin-top: 50px;
+}
+.game__item-7 {
+    width: 400px;
+    height: 20px;
+    vertical-align: top;
+    margin-top: 180px;
+}
+.game__item-8 {
+    width: 20px;
+    height: 100px;
+    vertical-align: bottom;
+    margin-top: 180px;
+}
+.game__item-9 {
+    width: 450px;
+    height: 20px;
+    vertical-align: top;
+    margin-left: 660px;
+}
+.game__item-10 {
+    width: 10px;
+    height: 50px;
+    margin-left: 660px;
+}
+.game__item-11 {
+    width: 250px;
+    height: 10px;
+}
+.game__item-12 {
+    width: 10px;
+    height: 150px;
+    vertical-align: top;
+    margin-top: 40px;
+}
+.game__item-13 {
+    width: 120px;
+    height: 7px;
+    vertical-align: bottom;
+}
+.game__item-14 {
+    width: 7px;
+    height: 50px;
+    vertical-align: bottom;
+    margin-bottom: -43px;
+}
+.game__item-15 {
+    width: 7px;
+    height: 7px;
+    vertical-align: bottom;
+    margin-bottom: -43px;
+}
+.game__item-16 {
+    width: 60px;
+    height: 60px;
+    vertical-align: bottom;
+    margin-bottom: -70px;
+    background-color: red;
+}
+.game__item-17 {
+    background: url(../img/win.jpg) bottom no-repeat;
+    width: 1000px;
+    height: 500px;
+    margin: 100px 0 0 80px;
+    visibility: hidden;
+}
+.line:hover + .line,
+.line:hover {
+    visibility: visible;
+}
+/* ============================== */
+.practice {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.practice__title {
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: 700;
+    line-height: 155%;
+    text-align: center;
+}
+.practice__text p {
+    text-align: center;
+    padding: 5px;
+}
+.practice__text p a {
+    color: blue;
+}
+.practice__text p a:hover {
+    text-decoration: underline;
+}
+.practice__text p:nth-child(even) {
+    background-color: lightblue;
+}
+.practice__text p:nth-child(odd) {
+    background-color: lightgreen;
+}
+.practice__text p:nth-child(even):hover,
+.practice__text p:nth-child(odd):hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Задайте бажаний стиль тіні */
+}
+.practice__text p::before,
+.practice__text p::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #000;
+}
+.practice__text p:hover::before,
+.practice__text p:hover::after {
+    border-radius: 0;
+}
+.practice__text p::before {
+    margin-right: 10px;
+}
+.practice__text p::after {
+    margin-left: 10px;
+}
+.practice__visited:visited {
+    color: rgb(157, 5, 5);
+}
+.practice__text p span {
+    color: #000;
+    padding: 2px;
+}
+
+.block-visited__text a {
+    color: rgb(206, 228, 9);
+    background-color: #7d7d7d;
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.block-visited {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.block-visited__title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: 700;
+    line-height: 155%;
+    text-align: center;
+}
+.block-visited__text {
+    text-align: center;
+}
