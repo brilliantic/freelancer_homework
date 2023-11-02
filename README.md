@@ -8,6 +8,7 @@
 [Lesson 09](https://brilliantic.github.io/freelancer_homework/lesson_9)<br>
 [Lesson 10](https://brilliantic.github.io/freelancer_homework/lesson_10)<br>
 [Lesson 11](https://brilliantic.github.io/freelancer_homework/lesson_11)<br>
+[Lesson 12](https://brilliantic.github.io/freelancer_homework/lesson_12)<br>
 Next project (to be added)
 
 <br><br><br>
