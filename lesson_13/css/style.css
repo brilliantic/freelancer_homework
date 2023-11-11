@@ -19,6 +19,193 @@ body {
 [class*="__container"] {
     max-width: 1220px;
     margin: 0 auto;
-}/* ========================================== */
+    box-sizing: content-box;
+}
+.footer {
+    height: 200px;
+}
+/* ========================================== */
+.blocks,
+.blocks-3d {
+    font-size: 0;
+    padding: 100px 0;
+}
+.block__shadow,
+.block-3d__shadow {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(125, 125, 125, 0.5);
+    display: inline-block;
+}
+.block__item,
+.block-3d__item {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    background-color: #ee8829;
+}
+.block__item p,
+.block-3d__item p,
+.flip__front p,
+.flip__back p {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.block__shadow:not(:last-child),
+.block-3d__shadow:not(:last-child) {
+    margin-right: 55px;
+}
+.block__item--translate,
+.block__item--scale,
+.block__item--skew,
+.block-3d__item {
+    transition: background-color 0.2s, transform 0.2s;
+}
+.block__shadow:hover .block__item--translate {
+    transform: translate(-10%, -10%);
+}
+.block__shadow:hover .block__item--scale {
+    transform: scale(1.2);
+}
+.block__item--rotate {
+    transition: background-color 0.4s, transform 0.4s;
+}
+.block__shadow:hover .block__item--rotate {
+    transform: rotateY(360deg) scale(1.2);
+}
+.block__shadow:hover .block__item--skew {
+    transform: skew(-15deg, 0) scale(0.7);
+    box-shadow: 5px 5px 2px #0000008f;
+}
+.block__shadow:hover .block__item--origin {
+    transform: rotate(-10deg);
+    transform-origin: 100% 100%;
+}
 
 /* ========================================== */
+
+.block-3d__shadow {
+    perspective: 100px;
+    perspective-origin: center;
+}
+.block-3d__shadow:hover .block-3d__item--rotate {
+    transform: rotate3d(-10, 0, 0, 30deg);
+}
+.block-3d__shadow:last-child {
+    transform-style: preserve-3d;
+}
+.block-3d__item--preserve:hover {
+    transform: rotateX(-20deg);
+}
+.flip__body {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    perspective: 500px;
+}
+.flip__front,
+.flip__back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+}
+.flip__front {
+    background-color: #ee8829;
+    transform: rotateY(0deg);
+}
+.flip__back {
+    backface-visibility: hidden;
+    background-color: #7a956b;
+    transform: rotateY(-180deg);
+}
+.flip__body:hover .flip__back {
+    transform: rotateY(0deg);
+}
+.flip__body:hover .flip__front {
+    transform: rotateY(180deg);
+}
+/* ============================ */
+.car {
+    margin-top: 350px;
+    position: relative;
+    width: 1200px;
+    height: 200px;
+    background-color: rgb(34, 58, 74);
+    border-radius: 15% 85% 40% 60% / 65% 100% 0% 35%;
+}
+.car__body {
+}
+
+.wheel__rubber::before,
+.wheel__rubber::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(26, 26, 26);
+}
+.wheel__rubber::before {
+    width: 200px;
+    height: 200px;
+    top: 45%;
+    left: 150px;
+}
+.wheel__rubber::after {
+    width: 150px;
+    height: 150px;
+    top: 65%;
+    right: 150px;
+}
+.wheel__disk::before,
+.wheel__disk::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid rgb(102, 102, 102);
+    background-color: rgb(226, 226, 226);
+}
+.wheel__disk::before {
+    width: 150px;
+    height: 150px;
+    left: 175px;
+    top: 57%;
+}
+.wheel__disk::after {
+    width: 100px;
+    height: 100px;
+    top: 77%;
+    right: 175px;
+}
+.wheel__disk--bolt::before,
+.wheel__disk--bolt::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(26, 26, 26);
+}
+.wheel__disk--bolt::before {
+    width: 40px;
+    height: 40px;
+    left: 230px;
+    top: 85%;
+}
+.wheel__disk--bolt::after {
+    width: 20px;
+    height: 20px;
+    right: 215px;
+    top: 95%;
+}
+
+.car__disk-elements {
+}
+.element-disk {
+}
+.element-disk__item {
+}
