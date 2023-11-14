@@ -200,7 +200,7 @@ body {
     width: 20px;
     height: 20px;
     right: 215px;
-    top: 95%;
+    top: 97%;
 }
 
 .car__disk-elements {
@@ -208,4 +208,7 @@ body {
 .element-disk {
 }
 .element-disk__item {
+}
+
+.car__glass {
 }
