@@ -140,6 +140,8 @@ body {
     height: 200px;
     background-color: rgb(34, 58, 74);
     border-radius: 15% 85% 40% 60% / 65% 100% 0% 35%;
+    z-index: 1;
+    /* overflow: hidden; */
 }
 .car__body {
 }
@@ -222,9 +224,6 @@ body {
     height: 200px;
     left: 200px;
 }
-.wheel__disk--elements {
-    /* position: relative; */
-}
 .element-disk {
 }
 .element-disk__item {
@@ -237,8 +236,74 @@ body {
     border-radius: 50% 50% 50% 50% / 20% 20% 80% 80%;
 }
 .element-disk__item:nth-child(1) {
-    top: 0;
-    left: 100px;
+    top: 110px;
+    left: -15px;
 }
-.car__glass {
+.element-disk__item:nth-child(2) {
+    top: 200px;
+    left: -15px;
+    transform: rotate(180deg);
+}
+.element-disk__item:nth-child(3) {
+    top: 155px;
+    left: -60px;
+    transform: rotate(-90deg);
+}
+.element-disk__item:nth-child(4) {
+    top: 155px;
+    left: 30px;
+    transform: rotate(90deg);
+}
+.element-disk__item:nth-child(5) {
+    width: 20px;
+    height: 30px;
+    top: 157px;
+    left: 790px;
+    /* transform: rotate(90deg); */
+    z-index: 3;
+}
+.element-disk__item:nth-child(6) {
+    width: 20px;
+    height: 30px;
+    top: 213px;
+    left: 790px;
+    transform: rotate(180deg);
+    z-index: 3;
+}
+.element-disk__item:nth-child(7) {
+    width: 20px;
+    height: 30px;
+    top: 185px;
+    left: 817px;
+    transform: rotate(90deg);
+    z-index: 3;
+}
+.element-disk__item:nth-child(8) {
+    width: 20px;
+    height: 30px;
+    top: 185px;
+    left: 763px;
+    transform: rotate(-90deg);
+    z-index: 3;
+}
+.details__glass {
+    position: absolute;
+    top: -65px;
+    left: 700px;
+    width: 100px;
+    height: 120px;
+    background-color: rgba(163, 169, 173, 0.237);
+    border-radius: 13% 89% 100% 0% / 0% 100% 16% 80%;
+    overflow: visible;
+}
+.details__door {
+    position: absolute;
+    top: 0px;
+    left: 400px;
+    width: 300px;
+    height: 180px;
+    background-color: rgba(163, 169, 173, 0);
+    border-radius: 100% 3% 0% 17% / 9% 100% 100% 80% ;
+    border: 1px solid #000 ;
+    overflow: hidden;
 }
