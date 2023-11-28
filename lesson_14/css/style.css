@@ -1,0 +1,27 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+html,
+body {
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    color: #7d7d7d;
+    width: auto;
+}
+.wraper {
+    overflow: clip;
+    min-height: 100%;
+    position: relative;
+}
+.main {
+}
+[class*="__container"] {
+    max-width: 1220px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+.footer {
+    height: 200px;
+}
+/* ========================================== */
