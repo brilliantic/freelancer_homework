@@ -265,13 +265,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    border-bottom: 1px solid #EDEEF2;
+    width: 1240px;
+    border-bottom: 1px solid #edeef2;
     padding: 30px 0;
+    margin: 0 auto;
+}
+.wishlist__wraper {
     transition: background-color 0.3s;
 }
-.cart-wishlist:hover {
-    background-color: #EDEEF2;
+.wishlist__wraper:hover {
+    background-color: #edeef2;
 }
 .cart-wishlist__image {
     width: 110px;
@@ -284,7 +287,7 @@ body {
     position: absolute;
     width: 22px;
     height: 22px;
-    top:50%;
+    top: 50%;
     left: -47px;
     background: url(../img/icons/close-cross.svg) no-repeat;
     transform: translate(-50%, -50%);
@@ -324,12 +327,12 @@ body {
     gap: 50px;
 }
 .cart-wishlist__price {
-    color: #807D7E;
-font-size: 22px;
-font-weight: 700;
-letter-spacing: 0.44px;
+    color: #807d7e;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.44px;
 }
 
-.cart-wishlist__price:hover {
+.cart-wishlist__btn:hover {
     background-color: #7420e1;
 }
