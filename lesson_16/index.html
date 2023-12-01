@@ -10,13 +10,54 @@
     <body>
         <div class="wraper">
             <header class="header">
-                <div class="header__container">
-                    
-                </div>
+                <div class="header__container"></div>
             </header>
             <main class="main">
                 <div class="main__container">
-                    
+                    <div class="white-collar">
+                        <h4 class="white-collar__label">Contact Us</h4>
+                        <h2 class="white-collar__title">
+                            Request A Call Back !
+                        </h2>
+                        <form
+                            class="white-collar__form form-white"
+                            method="GET"
+                            action="#">
+                            <div class="form-white__personal-data">
+                                <input
+                                    required
+                                    class="form-white__name"
+                                    type="text"
+                                    placeholder="Your Name" />
+                                <input
+                                    required
+                                    class="form-white__email"
+                                    type="email"
+                                    placeholder="Email Address" />
+                            </div>
+                            <div class="form-white__info">
+                                <input
+                                    required
+                                    class="form-white__phone"
+                                    type="tel"
+                                    placeholder="Phone Number"
+                                    pattern="[0-9]{10}"
+                                    title="Please enter a valid 10-digit phone number." />
+                                <input
+                                    class="form-white__subject"
+                                    type="text"
+                                    placeholder="Subject" />
+                            </div>
+                            <div class="form-white__wraper-message">
+                                <textarea
+                                    class="form-white__message"
+                                    placeholder="Message..."></textarea>
+                            </div>
+                            <button class="form-white__btn" type="submit">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </main>
             <footer class="footer"></footer>
