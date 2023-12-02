@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <title>lesson 16</title>
+    </head>
+    <body>
+        <div class="wraper">
+            <header class="header">
+                <div class="header__container"></div>
+            </header>
+            <main class="main">
+                <div class="main__container">
+                    <div class="white-collar">
+                        <h4 class="white-collar__label">Contact Us</h4>
+                        <h2 class="white-collar__title">
+                            Request A Call Back !
+                        </h2>
+                        <form
+                            class="white-collar__form form-white"
+                            method="GET"
+                            action="#">
+                            <div class="form-white__wraper">
+                                <div
+                                    class="form-white__personal-data form-white__personal-data--name">
+                                    <input
+                                        required
+                                        class="form-white__name"
+                                        type="text"
+                                        id="name" />
+                                    <label
+                                        class="form-white__label form-white__label--name"
+                                        for="name">
+                                        Your Name
+                                    </label>
+                                </div>
+
+                                <div
+                                    class="form-white__personal-data form-white__personal-data--email">
+                                    <input
+                                        required
+                                        class="form-white__email"
+                                        type="email"
+                                        id="email" />
+                                    <label
+                                        class="form-white__label form-white__label--email"
+                                        for="email">
+                                        Email Address
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- ========= ========= ========= ========= -->
+                            <div class="form-white__wraper">
+                                <div
+                                    class="form-white__personal-data form-white__personal-data--phone">
+                                    <input
+                                        required
+                                        class="form-white__phone"
+                                        type="tel"
+                                        id="phone" />
+                                    <label
+                                        class="form-white__label form-white__label--phone"
+                                        for="phone">
+                                        Phone Number
+                                    </label>
+                                </div>
+
+                                <div
+                                    class="form-white__personal-data form-white__personal-data--subject">
+                                    <input
+                                        class="form-white__subject"
+                                        type="text"
+                                        id="subject" />
+                                    <label
+                                        class="form-white__label form-white__label--subject"
+                                        for="subject">
+                                        Subject
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-white__wraper-message">
+                                <textarea class="form-white__message"></textarea>
+                            </div>
+                            <button class="form-white__btn" type="submit">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer"></footer>
+        </div>
+    </body>
+</html>

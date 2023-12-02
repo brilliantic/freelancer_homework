@@ -1,0 +1,210 @@
+@import url(fonts.css);
+@import url(reset.css);
+
+html,
+body {
+    height: 100%;
+    font-family: "Causten";
+    font-size: 18px;
+    color: #807d7e;
+    width: auto;
+}
+.wraper {
+    overflow: clip;
+    min-height: 100%;
+    position: relative;
+}
+.main {
+}
+[class*="__container"] {
+    max-width: 1240px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+.footer {
+    height: 200px;
+}
+/* ========================================== */
+.white-collar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    width: 1220px;
+}
+.white-collar__label {
+    position: relative;
+    color: #37393f;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 18px;
+}
+.white-collar__label:not(:last-child) {
+    margin-bottom: 16px;
+}
+.white-collar__label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    background: #40ddb6;
+    transform: translateY(-50%);
+}
+.white-collar__title {
+    color: #37393f;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 121%; /* 48.4px */
+}
+.white-collar__title:not(:last-child) {
+    margin-bottom: 40px;
+}
+.white-collar__form {
+    padding: 20px;
+    box-sizing: border-box;
+}
+.form-white {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-white__info,
+.form-white__personal-data {
+    height: 65px;
+}
+.form-white__info,
+.form-white__personal-data,
+.form-white__wraper-message {
+    width: 100%;
+    display: flex;
+    gap: 35px;
+    margin-bottom: 28px;
+}
+.form-white__name,
+.form-white__email,
+.form-white__phone,
+.form-white__subject,
+.form-white__message {
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    font-size: 22px;
+    padding-left: 15px;
+}
+.form-white__info {
+}
+.form-white__wraper-message {
+    margin-bottom: 50px;
+}
+.form-white__message {
+    min-height: 222px;
+    resize: vertical;
+    padding-top: 15px;
+    line-height: 140%;
+    position: relative;
+}
+.form-white__message:before {
+    content: "Message...";
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 15px;
+    left: 15px;
+    background-color: #525eca;
+    color: red;
+}
+.form-white__btn {
+    padding: 21px 61px;
+    background-color: #6b77e5;
+    color: #ffffff;
+    font-family: "Inter";
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.form-white__btn:hover {
+    background-color: #525eca;
+}
+.form-white__btn:active::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    transition: opacity 0.3s;
+}
+.form-white__btn:active:hover::before {
+    opacity: 0.5;
+}
+.form-white__btn:active:active {
+    transform: translateY(5px);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+.form-white__personal-data {
+    position: relative;
+}
+/* .form-white__personal-data:before {
+    content: "Your Name";
+    position: absolute;
+    width: 100%;
+    height: 15px;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 22px;
+} */
+.form-white__wraper {
+    display: flex;
+    width: 100%;
+    gap: 35px;
+}
+/* .form-white__personal-data {
+    position: relative;
+}
+
+.form-white__label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.3s, font-size 0.3s;
+}
+
+.form-white__name:focus ~ .form-white__label--name {
+    transform: translateY(-80%) scale(0.8);
+    font-size: 16px;
+} */
+
+.form-white__personal-data {
+    position: relative;
+}
+
+.form-white__label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: transform 0.3s, font-size 0.3s;
+}
+
+.form-white__name:focus + .form-white__label,
+.form-white__email:focus + .form-white__label,
+.form-white__phone:focus + .form-white__label,
+.form-white__subject:focus + .form-white__label {
+    transform: translateY(-50%) scale(0.8);
+    font-size: 16px;
+    top: 20%;
+}
