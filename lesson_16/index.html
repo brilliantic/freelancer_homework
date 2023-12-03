@@ -34,12 +34,11 @@
                                         Your Name
                                     </label>
                                 </div>
-
                                 <div class="form-white__personal-data">
                                     <input
                                         required
                                         class="form-white__input"
-                                        type="mail"
+                                        type="text"
                                         id="email" />
                                     <label
                                         class="form-white__label"
@@ -48,7 +47,6 @@
                                     </label>
                                 </div>
                             </div>
-                            <!-- ========= ========= ========= ========= -->
                             <div class="form-white__wraper">
                                 <div class="form-white__personal-data">
                                     <input
@@ -91,6 +89,184 @@
                                 Submit
                             </button>
                         </form>
+                    </div>
+
+                    <div class="check-out">
+                        <div class="check-out__wraper">
+                            <h2 class="check-out__title">Check Out</h2>
+                            <h4 class="check-out__label">Billing Details</h4>
+                            <form
+                                class="check-out__form form-out"
+                                method="GET"
+                                action="#">
+                                <div class="form-out__row">
+                                    <div class="form-out__private private">
+                                        <label
+                                            class="private__label"
+                                            for="first-name">
+                                            First Name*
+                                        </label>
+                                        <input
+                                            required
+                                            class="private__input"
+                                            type="text"
+                                            id="first-name"
+                                            placeholder="First Name" />
+                                    </div>
+                                    <div class="form-out__private private">
+                                        <label
+                                            class="private__label"
+                                            for="last-name">
+                                            Last Name*
+                                        </label>
+                                        <input
+                                            required
+                                            class="private__input"
+                                            type="text"
+                                            id="last-name"
+                                            placeholder="Last Name" />
+                                    </div>
+                                </div>
+
+                                <div class="form-out__row">
+                                    <div class="form-out__private private">
+                                        <label
+                                            class="private__label"
+                                            for="country">
+                                            Country Region*
+                                        </label>
+                                        <input
+                                            required
+                                            class="private__input"
+                                            type="text"
+                                            id="country"
+                                            placeholder="Country Region" />
+                                    </div>
+                                    <div class="form-out__private private">
+                                        <label
+                                            class="private__label"
+                                            for="company-name">
+                                            Company Name
+                                        </label>
+                                        <input
+                                            class="private__input"
+                                            type="text"
+                                            id="company-name"
+                                            placeholder="Company Name" />
+                                    </div>
+                                </div>
+
+                                <div class="form-out__row">
+                                    <div class="form-out__private private">
+                                        <label
+                                            class="private__label"
+                                            for="address">
+                                            Street Address*
+                                        </label>
+                                        <input
+                                            required
+                                            class="private__input"
+                                            type="text"
+                                            id="address"
+                                            placeholder="House number and street name" />
+                                    </div>
+                                    <div class="form-out__private private">
+                                        <label
+                                            class="private__label"
+                                            for="unit">
+                                            Apt, suite, unit
+                                        </label>
+                                        <input
+                                            class="private__input"
+                                            type="text"
+                                            id="unit"
+                                            placeholder="apartment, suite, unit, etc. (optional)" />
+                                    </div>
+                                </div>
+
+                                <div class="form-out__row">
+                                    <div class="form-out__private private">
+                                        <label
+                                            class="private__label"
+                                            for="city">
+                                            City*
+                                        </label>
+                                        <input
+                                            required
+                                            class="private__input"
+                                            type="text"
+                                            id="city"
+                                            placeholder="Town City" />
+                                    </div>
+                                    <div class="form-out__private private">
+                                        <label
+                                            class="private__label private__label--state"
+                                            for="state">
+                                            State*
+                                        </label>
+                                        <select
+                                            required
+                                            class="private__input private__label--state"
+                                            id="state">
+                                            <option value="" disabled selected>
+                                                State
+                                            </option>
+                                            <option value="UK">Ukraine</option>
+                                            <option value="PL">Poland</option>
+                                            <option value="US">USA</option>
+                                            <option value="FR">France</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-out__private private">
+                                        <label
+                                            class="private__label"
+                                            for="code">
+                                            Postal Code*
+                                        </label>
+                                        <input
+                                            class="private__input"
+                                            type="text"
+                                            id="code"
+                                            placeholder="Postal Code" />
+                                    </div>
+                                </div>
+
+                                <div class="form-out__row form-out__row--phone">
+                                    <div class="form-out__private private">
+                                        <label
+                                            class="private__label"
+                                            for="form-out-phone">
+                                            Phone*
+                                        </label>
+                                        <input
+                                            required
+                                            class="private__input private__input--phone"
+                                            type="text"
+                                            id="form-out-phone"
+                                            placeholder="Phone" />
+                                    </div>
+                                </div>
+
+                                <div class="form-out__row form-out__row--btn">
+                                    <button class="form-out__btn" type="submit">
+                                        Continue to delivery
+                                    </button>
+                                    <div class="form-out__private private private--checkbox">
+                                        <input
+                                            required
+                                            class="private__input private__input--checkbox"
+                                            type="checkbox"
+                                            id="checkbox" />
+                                        <label
+                                            class="private__label private__label--checkbox"
+                                            for="checkbox">
+                                            Save my information for a faster
+                                            checkout
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </main>
