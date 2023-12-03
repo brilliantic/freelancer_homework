@@ -103,7 +103,7 @@ body {
     position: relative;
     min-height: 222px;
     resize: vertical;
-    padding-top: 15px;
+    padding-top: 20px;
     line-height: 140%;
 }
 .form-white__btn {

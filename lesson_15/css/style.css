@@ -20,6 +20,7 @@ body {
     max-width: 1240px;
     margin: 0 auto;
     box-sizing: content-box;
+    padding: 0 15px;
 }
 .footer {
     height: 200px;
@@ -31,7 +32,7 @@ body {
 .header__container {
     display: flex;
     justify-content: space-between;
-    padding: 34px 100px 31px;
+    padding-top: 34px;
     align-items: center;
 }
 .header__logo {
@@ -139,8 +140,6 @@ body {
     border: 1px solid #fff;
 }
 /* =========================== */
-.main__container {
-}
 .sticky-categories {
     margin-bottom: 70px;
 }
@@ -183,39 +182,41 @@ body {
     justify-content: space-between;
     margin-bottom: 100px;
 }
-.categories__cart {
-}
 .cart {
     cursor: pointer;
     max-width: 274px;
+    padding-right: 15px;
 }
-.cart:not(:last-child) {
-    margin-bottom: 50px;
+.cart:nth-child(4),
+.cart:last-child {
+    padding-right: 0;
 }
-.cart__container-image {
+.cart__conttainer-image {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
+    max-width: 270px;
+    max-height: 388px;
+    margin-bottom: 15px;
 }
 .cart__image {
-    border: 10px;
     margin-bottom: 16px;
     max-width: 270px;
-
+    overflow: hidden;
     height: auto;
     transition: transform 0.3s;
 }
-.cart__container-image:hover {
-}
-.cart__container-image:hover .cart__image {
+.cart__image:hover {
     transform: scale(1.2);
-    /* box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.5); */
+    overflow: hidden;
 }
 .cart__image img {
+    object-fit: cover;
+    border-radius: 10px;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
-
 .cart__info {
     position: relative;
     width: 100%;
@@ -236,9 +237,10 @@ body {
     font-weight: 700;
     line-height: 27.93px; /*156.25% */
     letter-spacing: -0.715px;
+    padding-right: 45px;
 }
-.cart__name:not(:last-child) {
-    margin-bottom: 4px;
+.categories .cart:nth-child(n+5) {
+    margin-bottom: 0;
 }
 .cart__text {
     color: #7f7f7f;
@@ -247,8 +249,7 @@ body {
     font-weight: 500;
     line-height: 27.93px; /* 208.333% */
     letter-spacing: -0.536px;
-}
-.orders {
+    padding-right: 45px;
 }
 /* ========================= */
 .sticky-wishlist {
@@ -261,15 +262,13 @@ body {
 .wishlist:not(:last-child) {
     margin-bottom: 100px;
 }
-.wishlist__cart {
-}
 .cart-wishlist {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1240px;
+    max-width: 1240px;
     border-bottom: 1px solid #edeef2;
-    padding: 30px 0;
+    padding: 30px 15px;
     margin: 0 auto;
 }
 .wishlist__wraper {
@@ -295,6 +294,7 @@ body {
 }
 .cart-wishlist__image img {
     width: 100%;
+    border-radius: 4px;
 }
 .cart-wishlist__info {
     display: flex;
@@ -305,6 +305,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     min-height: 110px;
+    padding-right: 15px;
 
     color: #3c4242;
     font-family: "Causten";
@@ -312,15 +313,11 @@ body {
     font-weight: 700;
     letter-spacing: 0.44px;
 }
-.cart-wishlist__title {
-}
 .cart-wishlist__color span,
 .cart-wishlist__quantit span {
     color: #807d7e;
     font-weight: 400;
     font-size: 22px;
-}
-.cart-wishlist__quantit {
 }
 .cart-wishlist__buy {
     display: flex;
@@ -332,6 +329,7 @@ body {
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 0.44px;
+    padding-right: 15px;
 }
 .cart-wishlist__btn {
     cursor: pointer;
@@ -342,10 +340,6 @@ body {
 /* ============================ */
 .sticky-orders {
     margin-bottom: 50px;
-}
-.orders {
-}
-.orders__item {
 }
 .item-order {
     font-family: "Causten";
@@ -369,8 +363,6 @@ body {
 .info-order__wraper {
     display: flex;
     justify-content: space-between;
-}
-.info-order__shipping {
 }
 .shipping {
     align-items: start;
@@ -397,16 +389,8 @@ body {
     color: #bebcbd;
     font-weight: 400;
 }
-.info-order__process {
-}
-.process {
-}
 .process__status {
     margin-bottom: 7px;
-}
-.process__payment {
-}
-.item-order__unit {
 }
 .unit {
     padding: 30px 0;
@@ -423,8 +407,6 @@ body {
 .unit__image {
     margin-right: 25px;
     width: 96px;
-}
-.unit__waper-details {
 }
 .unit__details {
     display: flex;
@@ -448,10 +430,6 @@ body {
 .unit__title:not(:last-child) {
     margin-bottom: 10px;
 }
-.unit__color {
-}
-.unit__quantit {
-}
 .unit__price {
     color: #807d7e;
     font-size: 14px;
@@ -464,8 +442,4 @@ body {
 }
 .unit__btn:hover {
     background-color: #7420e1;
-}
-.button {
-}
-.button--purple {
 }
