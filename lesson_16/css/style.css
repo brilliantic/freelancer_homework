@@ -1,5 +1,6 @@
 @import url(fonts.css);
 @import url(reset.css);
+@import url(placeholder.css);
 
 html,
 body {
@@ -86,41 +87,28 @@ body {
     gap: 35px;
     margin-bottom: 28px;
 }
-.form-white__name,
-.form-white__email,
-.form-white__phone,
-.form-white__subject,
+.form-white__input,
 .form-white__message {
     width: 100%;
     border: 1px solid #ddd;
     background: #f8f8f8;
     font-size: 22px;
-    padding-left: 15px;
-}
-.form-white__info {
+    padding: 0 45px;
 }
 .form-white__wraper-message {
+    position: relative;
     margin-bottom: 50px;
 }
 .form-white__message {
+    position: relative;
     min-height: 222px;
     resize: vertical;
     padding-top: 15px;
     line-height: 140%;
-    position: relative;
-}
-.form-white__message:before {
-    content: "Message...";
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    top: 15px;
-    left: 15px;
-    background-color: #525eca;
-    color: red;
 }
 .form-white__btn {
     padding: 21px 61px;
+    position: relative;
     background-color: #6b77e5;
     color: #ffffff;
     font-family: "Inter";
@@ -154,57 +142,19 @@ body {
 .form-white__personal-data {
     position: relative;
 }
-/* .form-white__personal-data:before {
-    content: "Your Name";
-    position: absolute;
-    width: 100%;
-    height: 15px;
-    top: 50%;
-    left: 15px;
-    transform: translateY(-50%);
-    font-size: 22px;
-} */
 .form-white__wraper {
     display: flex;
     width: 100%;
     gap: 35px;
 }
-/* .form-white__personal-data {
-    position: relative;
-}
-
 .form-white__label {
     position: absolute;
-    left: 15px;
+    left: 40px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 22px;
     transition: transform 0.3s, font-size 0.3s;
 }
-
-.form-white__name:focus ~ .form-white__label--name {
-    transform: translateY(-80%) scale(0.8);
-    font-size: 16px;
-} */
-
-.form-white__personal-data {
-    position: relative;
-}
-
-.form-white__label {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 22px;
-    transition: transform 0.3s, font-size 0.3s;
-}
-
-.form-white__name:focus + .form-white__label,
-.form-white__email:focus + .form-white__label,
-.form-white__phone:focus + .form-white__label,
-.form-white__subject:focus + .form-white__label {
-    transform: translateY(-50%) scale(0.8);
-    font-size: 16px;
-    top: 20%;
+.form-white__label--message {
+    top: 22px;
 }

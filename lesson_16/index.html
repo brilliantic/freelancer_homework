@@ -24,29 +24,25 @@
                             method="GET"
                             action="#">
                             <div class="form-white__wraper">
-                                <div
-                                    class="form-white__personal-data form-white__personal-data--name">
+                                <div class="form-white__personal-data">
                                     <input
                                         required
-                                        class="form-white__name"
+                                        class="form-white__input"
                                         type="text"
                                         id="name" />
-                                    <label
-                                        class="form-white__label form-white__label--name"
-                                        for="name">
+                                    <label class="form-white__label" for="name">
                                         Your Name
                                     </label>
                                 </div>
 
-                                <div
-                                    class="form-white__personal-data form-white__personal-data--email">
+                                <div class="form-white__personal-data">
                                     <input
                                         required
-                                        class="form-white__email"
-                                        type="email"
+                                        class="form-white__input"
+                                        type="mail"
                                         id="email" />
                                     <label
-                                        class="form-white__label form-white__label--email"
+                                        class="form-white__label"
                                         for="email">
                                         Email Address
                                     </label>
@@ -54,35 +50,42 @@
                             </div>
                             <!-- ========= ========= ========= ========= -->
                             <div class="form-white__wraper">
-                                <div
-                                    class="form-white__personal-data form-white__personal-data--phone">
+                                <div class="form-white__personal-data">
                                     <input
                                         required
-                                        class="form-white__phone"
+                                        class="form-white__input"
                                         type="tel"
                                         id="phone" />
                                     <label
-                                        class="form-white__label form-white__label--phone"
+                                        class="form-white__label"
                                         for="phone">
                                         Phone Number
                                     </label>
                                 </div>
 
-                                <div
-                                    class="form-white__personal-data form-white__personal-data--subject">
+                                <div class="form-white__personal-data">
                                     <input
-                                        class="form-white__subject"
+                                        required
+                                        class="form-white__input"
                                         type="text"
                                         id="subject" />
                                     <label
-                                        class="form-white__label form-white__label--subject"
+                                        class="form-white__label"
                                         for="subject">
                                         Subject
                                     </label>
                                 </div>
                             </div>
                             <div class="form-white__wraper-message">
-                                <textarea class="form-white__message"></textarea>
+                                <textarea
+                                    required
+                                    class="form-white__message"
+                                    id="message"></textarea>
+                                <label
+                                    class="form-white__label form-white__label--message"
+                                    for="message">
+                                    Message...
+                                </label>
                             </div>
                             <button class="form-white__btn" type="submit">
                                 Submit
