@@ -31,7 +31,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
-    width: 1220px;
+    /* max-width: 1220px; */
 }
 .white-collar:not(:last-child) {
     margin-bottom: 100px;
@@ -156,7 +156,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     font-size: 22px;
-    transition: transform 0.3s, font-size 0.3s;
+    transition: transform 0.3s, font-size 0.3s, top 0.3s;
 }
 .form-white__label--message {
     top: 22px;
@@ -165,6 +165,8 @@ body {
 .check-out {
     max-width: 803px;
     margin: 0 auto;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #edeef2;
 }
 .check-out__wraper {
     margin: 0 15px;
@@ -254,7 +256,7 @@ body {
 .private__input--phone {
     max-width: 382px;
 }
-.form-out__btn {
+.button--purple {
     color: #fff;
     text-align: center;
     font-size: 18px;
@@ -265,14 +267,14 @@ body {
     position: relative;
     transition: box-shadow 0.3s;
 }
-.form-out__btn:not(:last-child) {
+.button--purple:not(:last-child) {
     margin-bottom: 20px;
 }
-.form-out__btn:hover {
+.button--purple:hover {
     background: #7124d5;
     box-shadow: 0 0.5em 0.5em -0.4em #7124d5;
 }
-.form-out__btn:active {
+.button--purple:active {
     transform: translateY(4px);
     box-shadow: none;
 }
@@ -289,4 +291,153 @@ body {
     color: #3c4242;
     font-size: 18px;
     font-weight: 400;
+}
+/* ========================= */
+.shipping {
+    max-width: 803px;
+    margin: 0 auto;
+}
+.shipping__wraper {
+}
+.form-shipping__wraper:not(:last-child) {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #edeef2;
+}
+.form-shipping__block-title {
+    margin-bottom: 30px;
+}
+.form-shipping__title {
+    color: #3c4242;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33.5px; /* 152.273% */
+    letter-spacing: 0.44px;
+}
+.form-shipping__title:not(:last-child) {
+    margin-bottom: 8px;
+}
+.form-shipping__text {
+    color: #3c4242;
+    font-size: 16px;
+    font-weight: 400;
+}
+.form-shipping__block {
+}
+.form-shipping__unit {
+    padding: 38px 28px;
+    background-color: #f6f6f6;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+.form-shipping__block--pay {
+}
+.block-shipping:not(:last-child) {
+    border-bottom: 1px solid #bebcbd;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+.block-shipping__radio {
+    margin-right: 19px;
+    vertical-align: middle;
+}
+.block-shipping__label {
+    color: #3c4242;
+    font-size: 20px;
+    font-weight: 700;
+    padding-right: 15px;
+}
+.block-shipping__label:not(:last-child) {
+    margin-bottom: 8px;
+}
+.block-shipping__text {
+    color: #807d7e;
+    font-size: 16px;
+    font-weight: 500;
+}
+.block-shipping__wraper {
+    display: flex;
+    justify-content: space-between;
+    color: #3c4242;
+    font-size: 20px;
+    font-weight: 700;
+}
+.block-shipping__wraper:not(:last-child) {
+    margin-bottom: 26px;
+}
+.block-shipping__price {
+}
+.block-shipping__info {
+    display: flex;
+    flex-direction: column;
+}
+.form-shipping__pay {
+    font-size: 0;
+    margin-bottom: 31px;
+}
+.form-shipping__pay img {
+    cursor: pointer;
+    border-radius: 10px;
+    max-width: 80px;
+}
+.form-shipping__pay img:not(:last-child) {
+    margin-right: 20px;
+}
+.block-shipping__wrapper {
+    display: flex;
+}
+.block-shipping__wrapper:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.block-shipping__wraper {
+}
+.block-shipping__personal-data {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.block-shipping__personal-data:not(:last-child) {
+    margin-right: 30px;
+}
+
+.block-shipping__input {
+    padding: 16px 20px;
+    border-radius: 8px;
+    border: 1px solid #3c4242;
+    background-color: #f6f6f6;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.block-shipping__input:focus {
+    padding: 16px 30px;
+}
+.block-shipping__label--card {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    transition: transform 0.3s, font-size 0.3s, top 0.3s;
+
+    color: #807d7e;
+    font-size: 18px;
+    font-weight: 400;
+}
+.block-shipping__btn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: url(../img/icons/pay/eye.svg) no-repeat;
+    cursor: pointer;
+}
+.block-shipping__personal-data--btn {
+    position: relative;
+}
+.form-shipping__btn {
+    padding: 16px 20px;
+
 }

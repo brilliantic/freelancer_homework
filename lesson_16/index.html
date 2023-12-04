@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <title>lesson 16</title>
     </head>
     <body>
@@ -29,7 +29,7 @@
                                         required
                                         class="form-white__input"
                                         type="text"
-                                        id="name" />
+                                        id="name">
                                     <label class="form-white__label" for="name">
                                         Your Name
                                     </label>
@@ -39,7 +39,7 @@
                                         required
                                         class="form-white__input"
                                         type="text"
-                                        id="email" />
+                                        id="email">
                                     <label
                                         class="form-white__label"
                                         for="email">
@@ -53,7 +53,7 @@
                                         required
                                         class="form-white__input"
                                         type="tel"
-                                        id="phone" />
+                                        id="phone">
                                     <label
                                         class="form-white__label"
                                         for="phone">
@@ -66,7 +66,7 @@
                                         required
                                         class="form-white__input"
                                         type="text"
-                                        id="subject" />
+                                        id="subject">
                                     <label
                                         class="form-white__label"
                                         for="subject">
@@ -111,7 +111,7 @@
                                             class="private__input"
                                             type="text"
                                             id="first-name"
-                                            placeholder="First Name" />
+                                            placeholder="First Name">
                                     </div>
                                     <div class="form-out__private private">
                                         <label
@@ -124,7 +124,7 @@
                                             class="private__input"
                                             type="text"
                                             id="last-name"
-                                            placeholder="Last Name" />
+                                            placeholder="Last Name">
                                     </div>
                                 </div>
 
@@ -140,7 +140,7 @@
                                             class="private__input"
                                             type="text"
                                             id="country"
-                                            placeholder="Country Region" />
+                                            placeholder="Country Region">
                                     </div>
                                     <div class="form-out__private private">
                                         <label
@@ -152,7 +152,7 @@
                                             class="private__input"
                                             type="text"
                                             id="company-name"
-                                            placeholder="Company Name" />
+                                            placeholder="Company Name">
                                     </div>
                                 </div>
 
@@ -168,7 +168,7 @@
                                             class="private__input"
                                             type="text"
                                             id="address"
-                                            placeholder="House number and street name" />
+                                            placeholder="House number and street name">
                                     </div>
                                     <div class="form-out__private private">
                                         <label
@@ -180,7 +180,7 @@
                                             class="private__input"
                                             type="text"
                                             id="unit"
-                                            placeholder="apartment, suite, unit, etc. (optional)" />
+                                            placeholder="apartment, suite, unit, etc. (optional)">
                                     </div>
                                 </div>
 
@@ -196,7 +196,7 @@
                                             class="private__input"
                                             type="text"
                                             id="city"
-                                            placeholder="Town City" />
+                                            placeholder="Town City">
                                     </div>
                                     <div class="form-out__private private">
                                         <label
@@ -206,7 +206,7 @@
                                         </label>
                                         <select
                                             required
-                                            class="private__input private__label--state"
+                                            class="private__input"
                                             id="state">
                                             <option value="" disabled selected>
                                                 State
@@ -227,7 +227,7 @@
                                             class="private__input"
                                             type="text"
                                             id="code"
-                                            placeholder="Postal Code" />
+                                            placeholder="Postal Code">
                                     </div>
                                 </div>
 
@@ -243,20 +243,21 @@
                                             class="private__input private__input--phone"
                                             type="text"
                                             id="form-out-phone"
-                                            placeholder="Phone" />
+                                            placeholder="Phone">
                                     </div>
                                 </div>
 
                                 <div class="form-out__row form-out__row--btn">
-                                    <button class="form-out__btn" type="submit">
+                                    <button class="form-out__btn button--purple" type="submit">
                                         Continue to delivery
                                     </button>
-                                    <div class="form-out__private private private--checkbox">
+                                    <div
+                                        class="form-out__private private private--checkbox">
                                         <input
                                             required
                                             class="private__input private__input--checkbox"
                                             type="checkbox"
-                                            id="checkbox" />
+                                            id="checkbox">
                                         <label
                                             class="private__label private__label--checkbox"
                                             for="checkbox">
@@ -268,9 +269,263 @@
                             </form>
                         </div>
                     </div>
+
+                    <div class="shipping">
+                        <div class="shipping__wraper">
+                            <form
+                                class="shipping__form form-shipping"
+                                action="#"
+                                method="GET">
+                                <div class="form-shipping__wraper">
+                                    <div class="form-shipping__block-title">
+                                        <h2 class="form-shipping__title">
+                                            Shipping Address
+                                        </h2>
+                                        <div class="form-shipping__text">
+                                            <p>
+                                                Select the address that matches
+                                                your card or payment method.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="form-shipping__unit">
+                                        <div
+                                            class="form-shipping__block block-shipping">
+                                            <input
+                                                checked
+                                                class="block-shipping__radio"
+                                                type="radio"
+                                                name="address-shipping"
+                                                value="address-shipping"
+                                                id="radio-address">
+                                            <label
+                                                for="radio-address"
+                                                class="block-shipping__label">
+                                                Same as Billing address
+                                            </label>
+                                        </div>
+                                        <div
+                                            class="form-shipping__block block-shipping">
+                                            <input
+                                                class="block-shipping__radio"
+                                                type="radio"
+                                                name="address-shipping"
+                                                value="shipping"
+                                                id="radio-shipping">
+                                            <label
+                                                for="radio-shipping"
+                                                class="block-shipping__label">
+                                                Use a different shipping address
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-shipping__wraper">
+                                    <div class="form-shipping__block-title">
+                                        <h2 class="form-shipping__title">
+                                            Shipping Method
+                                        </h2>
+                                    </div>
+                                    <div class="form-shipping__unit">
+                                        <div
+                                            class="form-shipping__block block-shipping">
+                                            <div class="block-shipping__label">
+                                                Arrives by Monday, June 7
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="form-shipping__block block-shipping">
+                                            <div class="block-shipping__wraper">
+                                                <div
+                                                    class="block-shipping__label">
+                                                    Delivery Charges
+                                                </div>
+                                                <div
+                                                    class="block-shipping__price">
+                                                    $5.00
+                                                </div>
+                                            </div>
+                                            <div class="block-shipping__text">
+                                                <p>Additional fess may apply</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-shipping__wraper">
+                                    <div class="form-shipping__block-title">
+                                        <h2 class="form-shipping__title">
+                                            Payment Method
+                                        </h2>
+                                        <div class="form-shipping__text">
+                                            <p>
+                                                All transactions are secure and
+                                                encrypted.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="form-shipping__unit">
+                                        <div
+                                            class="form-shipping__block block-shipping form-shipping__block--pay">
+                                            <div
+                                                class="block-shipping__wrapper">
+                                                <input
+                                                    checked
+                                                    class="block-shipping__radio"
+                                                    type="radio"
+                                                    name="radio-payment"
+                                                    value="credit"
+                                                    id="radioCreditCard">
+                                                <div
+                                                    class="block-shipping__info">
+                                                    <label
+                                                        for="radioCreditCard"
+                                                        class="block-shipping__label">
+                                                        Credit Card
+                                                    </label>
+                                                    <div
+                                                        class="block-shipping__text">
+                                                        <p>
+                                                            We accept all major
+                                                            credit cards.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-shipping__pay">
+                                                <img
+                                                    src="img/icons/pay/pay.svg"
+                                                    alt="Pay">
+                                                <img
+                                                    src="img/icons/pay/visa.svg"
+                                                    alt="Visa">
+                                                <img
+                                                    src="img/icons/pay/paypal.svg"
+                                                    alt="Paypal">
+                                                <img
+                                                    src="img/icons/pay/paypass.svg"
+                                                    alt="Paypass">
+                                            </div>
+
+                                            <div class="block-shipping__wraper">
+                                                <div
+                                                    class="block-shipping__personal-data">
+                                                    <input
+                                                        required
+                                                        class="block-shipping__input"
+                                                        type="tel"
+                                                        id="numCard"
+                                                        maxlength="16">
+                                                    <label
+                                                        class="block-shipping__label block-shipping__label--card"
+                                                        for="numCard">
+                                                        Card number
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="block-shipping__personal-data">
+                                                    <input
+                                                        required
+                                                        class="block-shipping__input"
+                                                        type="text"
+                                                        id="nameCard">
+                                                    <label
+                                                        class="block-shipping__label block-shipping__label--card"
+                                                        for="nameCard">
+                                                        Name of card
+                                                    </label>
+                                                </div>
+                                            </div>
+
+                                            <div class="block-shipping__wraper">
+                                                <div
+                                                    class="block-shipping__personal-data">
+                                                    <input
+                                                        required
+                                                        class="block-shipping__input"
+                                                        type="tel"
+                                                        id="date"
+                                                        maxlength="5"
+                                                        oninput="formatDate(this)">
+                                                    <label
+                                                        class="block-shipping__label block-shipping__label--card"
+                                                        for="date">
+                                                        Expiration date (MM/YY)
+                                                    </label>
+                                                </div>
+                                                <div
+                                                    class="block-shipping__personal-data block-shipping__personal-data--btn">
+                                                    <input
+                                                        required
+                                                        class="block-shipping__input"
+                                                        type="password"
+                                                        id="securityCode"
+                                                        maxlength="3">
+                                                    <label
+                                                        class="block-shipping__label block-shipping__label--card"
+                                                        for="securityCode">
+                                                        Security Code
+                                                    </label>
+                                                    <button
+                                                        class="block-shipping__btn"
+                                                        type="button"></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="form-shipping__block block-shipping form-shipping__block--pay">
+                                            <div
+                                                class="block-shipping__wrapper">
+                                                <input
+                                                    class="block-shipping__radio"
+                                                    type="radio"
+                                                    name="radio-payment"
+                                                    value="cash"
+                                                    id="radioCash">
+                                                <div
+                                                    class="block-shipping__info">
+                                                    <label
+                                                        for="radioCash"
+                                                        class="block-shipping__label">
+                                                        Cash on delivery
+                                                    </label>
+                                                    <div
+                                                        class="block-shipping__text">
+                                                        <p>
+                                                            Pay with cash upon
+                                                            delivery.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="form-shipping__block block-shipping form-shipping__block--pay">
+                                            <input
+                                                class="block-shipping__radio"
+                                                type="radio"
+                                                name="radio-payment"
+                                                value="paypal"
+                                                id="radioPaypal">
+                                            <label
+                                                for="radioPaypal"
+                                                class="block-shipping__label">
+                                                Paypal
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button class="form-shipping__btn button--purple" type="submit">
+                                        Pay Now
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </main>
             <footer class="footer"></footer>
         </div>
+        <script src="js/formatDate.js"></script>
     </body>
 </html>
