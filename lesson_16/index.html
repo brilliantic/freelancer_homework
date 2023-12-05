@@ -14,78 +14,72 @@
             </header>
             <main class="main">
                 <div class="main__container">
-                    <div class="white-collar">
-                        <h4 class="white-collar__label">Contact Us</h4>
-                        <h2 class="white-collar__title">
-                            Request A Call Back !
-                        </h2>
+                    <div class="call-back">
+                        <h4 class="call-back__label">Contact Us</h4>
+                        <h2 class="call-back__title">Request A Call Back !</h2>
                         <form
-                            class="white-collar__form form-white"
+                            class="call-back__form back-call"
                             method="GET"
                             action="#">
-                            <div class="form-white__wraper">
-                                <div class="form-white__personal-data">
+                            <div class="back-call__wraper">
+                                <div class="back-call__personal-data">
                                     <input
                                         required
-                                        class="form-white__input"
+                                        class="back-call__input"
                                         type="text"
                                         id="name">
-                                    <label class="form-white__label" for="name">
+                                    <label class="back-call__label" for="name">
                                         Your Name
                                     </label>
                                 </div>
-                                <div class="form-white__personal-data">
+                                <div class="back-call__personal-data">
                                     <input
                                         required
-                                        class="form-white__input"
+                                        class="back-call__input"
                                         type="text"
                                         id="email">
-                                    <label
-                                        class="form-white__label"
-                                        for="email">
+                                    <label class="back-call__label" for="email">
                                         Email Address
                                     </label>
                                 </div>
                             </div>
-                            <div class="form-white__wraper">
-                                <div class="form-white__personal-data">
+                            <div class="back-call__wraper">
+                                <div class="back-call__personal-data">
                                     <input
                                         required
-                                        class="form-white__input"
+                                        class="back-call__input"
                                         type="tel"
                                         id="phone">
-                                    <label
-                                        class="form-white__label"
-                                        for="phone">
+                                    <label class="back-call__label" for="phone">
                                         Phone Number
                                     </label>
                                 </div>
 
-                                <div class="form-white__personal-data">
+                                <div class="back-call__personal-data">
                                     <input
                                         required
-                                        class="form-white__input"
+                                        class="back-call__input"
                                         type="text"
                                         id="subject">
                                     <label
-                                        class="form-white__label"
+                                        class="back-call__label"
                                         for="subject">
                                         Subject
                                     </label>
                                 </div>
                             </div>
-                            <div class="form-white__wraper-message">
+                            <div class="back-call__wraper-message">
                                 <textarea
                                     required
-                                    class="form-white__message"
+                                    class="back-call__message"
                                     id="message"></textarea>
                                 <label
-                                    class="form-white__label form-white__label--message"
+                                    class="back-call__label back-call__label--message"
                                     for="message">
                                     Message...
                                 </label>
                             </div>
-                            <button class="form-white__btn" type="submit">
+                            <button class="back-call__btn" type="submit">
                                 Submit
                             </button>
                         </form>
@@ -93,8 +87,10 @@
 
                     <div class="check-out">
                         <div class="check-out__wraper">
-                            <h2 class="check-out__title">Check Out</h2>
-                            <h4 class="check-out__label">Billing Details</h4>
+                            <h2 class="check-out__title title">Check Out</h2>
+                            <h4 class="check-out__label label--title">
+                                Billing Details
+                            </h4>
                             <form
                                 class="check-out__form form-out"
                                 method="GET"
@@ -248,7 +244,9 @@
                                 </div>
 
                                 <div class="form-out__row form-out__row--btn">
-                                    <button class="form-out__btn button--purple" type="submit">
+                                    <button
+                                        class="form-out__btn button--purple"
+                                        type="submit">
                                         Continue to delivery
                                     </button>
                                     <div
@@ -515,8 +513,224 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <button class="form-shipping__btn button--purple" type="submit">
+                                    <button
+                                        class="form-shipping__btn button--purple"
+                                        type="submit">
                                         Pay Now
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="info">
+                        <div class="info__wraper">
+                            <h2 class="info__title title">My Info</h2>
+                            <h4 class="info__label label--title">
+                                Add Address
+                            </h4>
+                            <form
+                                class="info__form form-info"
+                                method="GET"
+                                action="#">
+                                <div class="form-info__row">
+                                    <div class="form-info__private private">
+                                        <label
+                                            class="private__label"
+                                            for="firstName">
+                                            First Name*
+                                        </label>
+                                        <input
+                                            required
+                                            class="private__input"
+                                            type="text"
+                                            id="firstName"
+                                            placeholder="First Name">
+                                    </div>
+                                    <div class="form-info__private private">
+                                        <label
+                                            class="private__label"
+                                            for="lastName">
+                                            Last Name*
+                                        </label>
+                                        <input
+                                            required
+                                            class="private__input"
+                                            type="text"
+                                            id="lastName"
+                                            placeholder="Last Name">
+                                    </div>
+                                </div>
+
+                                <div class="form-info__row">
+                                    <div class="form-info__private private">
+                                        <label
+                                            class="private__label"
+                                            for="infoCountry">
+                                            Country Region*
+                                        </label>
+                                        <input
+                                            required
+                                            class="private__input"
+                                            type="text"
+                                            id="infoCountry"
+                                            placeholder="Country Region">
+                                    </div>
+                                    <div class="form-info__private private">
+                                        <label
+                                            class="private__label"
+                                            for="companyName">
+                                            Company Name
+                                        </label>
+                                        <input
+                                            class="private__input"
+                                            type="text"
+                                            id="companyName"
+                                            placeholder="Company (optional)">
+                                    </div>
+                                </div>
+
+                                <div class="form-info__row">
+                                    <div class="form-info__private private">
+                                        <label
+                                            class="private__label"
+                                            for="streetAddress">
+                                            Street Address*
+                                        </label>
+                                        <input
+                                            required
+                                            class="private__input"
+                                            type="text"
+                                            id="streetAddress"
+                                            placeholder="House number and street name">
+                                    </div>
+                                    <div class="form-info__private private">
+                                        <label
+                                            class="private__label"
+                                            for="infoUnit">
+                                            Apt, suite, unit
+                                        </label>
+                                        <input
+                                            class="private__input"
+                                            type="text"
+                                            id="infoUnit"
+                                            placeholder="apartment, suite, unit, etc. (optional)">
+                                    </div>
+                                </div>
+
+                                <div class="form-info__row">
+                                    <div class="form-info__private private">
+                                        <label
+                                            class="private__label"
+                                            for="infoCity">
+                                            City*
+                                        </label>
+                                        <input
+                                            required
+                                            class="private__input"
+                                            type="text"
+                                            id="infoCity"
+                                            placeholder="Town City">
+                                    </div>
+                                    <div class="form-info__private private">
+                                        <label
+                                            class="private__label private__label--state"
+                                            for="infoState">
+                                            State*
+                                        </label>
+                                        <select
+                                            required
+                                            class="private__input"
+                                            id="infoState">
+                                            <option value="" disabled selected>
+                                                State
+                                            </option>
+                                            <option value="UK">Ukraine</option>
+                                            <option value="PL">Poland</option>
+                                            <option value="US">USA</option>
+                                            <option value="FR">France</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-info__row">
+                                    <div class="form-info__private private">
+                                        <label
+                                            class="private__label"
+                                            for="infoPhone">
+                                            Phone*
+                                        </label>
+                                        <input
+                                            required
+                                            class="private__input"
+                                            type="tel"
+                                            id="infoPhone"
+                                            placeholder="Phone">
+                                    </div>
+                                    <div class="form-info__private private">
+                                        <label
+                                            class="private__label"
+                                            for="postalCode">
+                                            Postal Code*
+                                        </label>
+                                        <input
+                                            class="private__input"
+                                            type="number"
+                                            id="postalCode"
+                                            placeholder="Postal Code">
+                                    </div>
+                                </div>
+
+                                <div class="form-info__block">
+                                    <label
+                                        class="form-info__label form-info__label--message"
+                                        for="instruction">
+                                        Delivery Instruction
+                                    </label>
+                                    <textarea
+                                        class="form-info__message"
+                                        id="instruction"
+                                        placeholder="Delivery Instruction"></textarea>
+                                </div>
+
+                                <div class="form-info__button">
+                                    <div class="form-info__wrap-check">
+                                        <div
+                                            class="form-info__checkbox private private--checkbox">
+                                            <input
+                                                required
+                                                class="private__input private__input--checkbox"
+                                                type="checkBox"
+                                                id="checkShip">
+                                            <label
+                                                class="private__label private__label--checkbox"
+                                                for="checkShip">
+                                                Set as default shipping address
+                                            </label>
+                                        </div>
+                                        <div
+                                            class="form-info__checkbox private private--checkbox">
+                                            <input
+                                                required
+                                                class="private__input private__input--checkbox"
+                                                type="checkbox"
+                                                id="checkBilling">
+                                            <label
+                                                class="private__label private__label--checkbox"
+                                                for="checkBilling">
+                                                Set as default billing address
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="form-info__btn button--purple"
+                                        type="submit">
+                                        Save
+                                    </button>
+                                    <button
+                                        class="form-info__btn button--cancel"
+                                        type="reset">
+                                        Cancel
                                     </button>
                                 </div>
                             </form>
