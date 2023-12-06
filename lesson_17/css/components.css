@@ -1,0 +1,29 @@
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.item {
+    flex: 1 1 auto;
+}
+.button {
+    position: relative;
+    text-align: center;
+      text-transform: capitalize;
+    transition: box-shadow 0.3s;
+}
+.button:active::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 8px;
+    z-index: -1;
+    transition: opacity 0.3s;
+}
+.button:active:hover::before {
+    opacity: 0.5;
+}
+.button:active:active {
+    transform: translateY(5px);
+}
