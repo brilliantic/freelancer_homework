@@ -67,8 +67,9 @@
                                     <div class="consulting__item item">
                                         <input
                                             required
-                                            class="item__input"
+                                            class="item__input item__input--consulting"
                                             type="text"
+                                            name="your name"
                                             id="nameConsulting">
                                         <label
                                             class="item__placeholder item__placeholder--visible"
@@ -79,8 +80,9 @@
                                     <div class="consulting__item item">
                                         <input
                                             required
-                                            class="item__input"
-                                            type="email"
+                                            class="item__input item__input--consulting"
+                                            type="mail"
+                                            name="mail"
                                             id="emailConsulting">
                                         <label
                                             class="item__placeholder item__placeholder--visible"
@@ -91,8 +93,9 @@
                                     <div class="consulting__item item">
                                         <input
                                             required
-                                            class="item__input"
+                                            class="item__input item__input--consulting"
                                             type="tel"
+                                            name="phone"
                                             id="phoneConsulting">
                                         <label
                                             class="item__placeholder item__placeholder--visible"
@@ -103,8 +106,9 @@
                                     <div class="consulting__item item">
                                         <input
                                             required
-                                            class="item__input"
+                                            class="item__input item__input--consulting"
                                             type="text"
+                                            name="subject"
                                             id="subjectConsulting">
                                         <label
                                             class="item__placeholder item__placeholder--visible"
@@ -159,6 +163,7 @@
                                                 class="item__input item__input--euphoria"
                                                 type="text"
                                                 id="firstName-2"
+                                                name="first name"
                                                 placeholder="First Name">
                                         </div>
                                         <div class="euphoria__item item">
@@ -172,6 +177,7 @@
                                                 class="item__input item__input--euphoria"
                                                 type="text"
                                                 id="lastName-f2"
+                                                name="last name"
                                                 placeholder="Last Name">
                                         </div>
                                         <div class="euphoria__item item">
@@ -185,6 +191,7 @@
                                                 class="item__input item__input--euphoria"
                                                 type="text"
                                                 id="country-f2"
+                                                name="country"
                                                 placeholder="Country Region">
                                         </div>
                                         <div class="euphoria__item item">
@@ -197,6 +204,7 @@
                                                 class="item__input item__input--euphoria"
                                                 type="text"
                                                 id="company-f2"
+                                                name="company"
                                                 placeholder="Company (optional)">
                                         </div>
                                         <div class="euphoria__item item">
@@ -210,6 +218,7 @@
                                                 class="item__input item__input--euphoria"
                                                 type="text"
                                                 id="address-f2"
+                                                name="address"
                                                 placeholder="House number and street name">
                                         </div>
                                         <div class="euphoria__item item">
@@ -222,6 +231,7 @@
                                                 class="item__input item__input--euphoria"
                                                 type="text"
                                                 id="apt-f2"
+                                                name="apt"
                                                 placeholder="apartment, suite, unit, etc. (optional)">
                                         </div>
                                         <div class="euphoria__item item">
@@ -244,16 +254,17 @@
                                                 State*
                                             </label>
                                             <select
-                                                required
-                                                class="item__input item__input--euphoria"
-                                                id="state-f2">
-                                                <option value="" disabled selected>
+                                                required name="State"
+                                                class="item__select select" name="state"
+                                                id="state-f2" >
+                                                
+                                                <option class="select__option" value="" disabled selected value>
                                                     State
                                                 </option>
-                                                <option value="UK">Ukraine</option>
-                                                <option value="PL">Poland</option>
-                                                <option value="US">USA</option>
-                                                <option value="FR">France</option>
+                                                <option class="select__option" value="UK">Ukraine</option>
+                                                <option class="select__option" value="PL">Poland</option>
+                                                <option class="select__option" value="US">USA</option>
+                                                <option class="select__option" value="FR">France</option>
                                             </select>
                                         </div>
                                         <div class="euphoria__item item">

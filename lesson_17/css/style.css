@@ -187,10 +187,14 @@ body {
 }
 .item__input {
     width: 100%;
+    font-size: 20px;
+    max-height: 52px;
+    color: #807d7e;
+}
+.item__input--consulting {
+    padding: 21px 40px;
     border: 1px solid #ddd;
     background: #f8f8f8;
-    padding: 21px 40px;
-    color: #807d7e;
 }
 .item__placeholder {
     color: #37393f;
@@ -265,7 +269,11 @@ body {
     font-weight: 600;
     letter-spacing: 0.36px;
 }
+.item__input {
+}
 .item__input--euphoria {
+    border-radius: 8px;
+    background: #f6f6f6;
     padding: 18px 22px;
 }
 .item__input::placeholder,
@@ -275,17 +283,18 @@ body {
 }
 .item--textarea {
 }
-.item__placeholder--textarea {
-}
 .item__textarea {
     width: 100%;
-    border: 1px solid #ddd;
-    background: #f8f8f8;
+    align-items: center;
     font-size: 22px;
     padding: 22px 40px;
     min-height: 222px;
-    align-items: center;
     resize: vertical;
+}
+.item__textarea--euphoria {
+    border-radius: 8px;
+    background: #F6F6F6;
+
 }
 .euphoria__checkbox {
     margin-bottom: 50px;
@@ -297,7 +306,7 @@ body {
 }
 .checkbox__input {
     width: 20px;
-    color: #BEBCBD;
+    color: #bebcbd;
 }
 .checkbox__input {
     appearance: none;
@@ -306,18 +315,18 @@ body {
     outline: none;
 }
 .checkbox__input::before {
-    content: '\2713';
+    content: "\2713";
     display: inline-flex;
     justify-content: center;
     align-items: center;
     font-size: 18px;
     color: #fff;
-    border: 2px solid #BEBCBD;
+    border: 2px solid #bebcbd;
     width: 20px;
     height: 20px;
 }
 .checkbox__input:checked::before {
-    color: #BEBCBD;
+    color: #bebcbd;
     background-color: #8a33fd;
     border: #8a33fd;
 }
@@ -332,4 +341,26 @@ body {
 .euphoria__btn {
     padding: 12px 40px;
     font-size: 20px;
+}
+.item__select {
+    position: relative;
+    padding: 18px 22px;
+    border-radius: 8px;
+    background: #f6f6f6;
+
+    color: #3c4242;
+    font-size: 16px;
+    line-height: 1.35;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../img/icons/arrow.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    background-size: 16px;
+}
+
+.select {
+}
+.select__option {
 }
