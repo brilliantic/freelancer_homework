@@ -6,18 +6,38 @@
 .item {
     flex: 1 1 auto;
 }
+.title {
+    color: #3c4242;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.5px; /* 119.643% */
+    letter-spacing: 0.56px;
+}
+.subtitle {
+    color: #3c4242;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33.5px; /* 152.273% */
+    letter-spacing: 0.44px;
+}
 .button {
     position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-      text-transform: capitalize;
-    transition: box-shadow 0.3s;
+    text-transform: capitalize;
+    min-height: 50px;
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 12px 48px;
+    transition: background-color 0.3s ease, border 0.3s, color 0.3s, box-shadow 0.3s;
 }
 .button:active::before {
     content: "";
     position: absolute;
     top: 2px;
     left: 2px;
-    border-radius: 8px;
     z-index: -1;
     transition: opacity 0.3s;
 }
@@ -26,4 +46,38 @@
 }
 .button:active:active {
     transform: translateY(5px);
+}
+.button--purple,
+.button--grey {
+    text-align: center;
+    font-size: 18px;
+    /* padding: 16px 20px; */
+    position: relative;
+    transition: box-shadow 0.3s, background-color 0.3s;
+}
+.button--purple {
+     background: #8a33fd;
+    color: #fff;
+    text-align: center;
+    font-family: "Causten";
+    font-size: 20px;
+    font-weight: 600;
+}
+.button--purple:hover {
+    background: #7124d5;
+    box-shadow: 0 0.5em 0.5em -0.4em #7124d5;
+}
+.button--purple:active,
+.button--grey:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
+.button--grey:hover {
+    background: #d7d5d5;
+    box-shadow: 0 0.5em 0.5em -0.4em #d7d5d5;
+}
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
 }

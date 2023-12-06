@@ -33,16 +33,16 @@
                             <li>Español</li>
                         </ul>
                     </div>
-                    <div class="header__btn">
+                    <div class="header__btn btn">
                         <a
                             href="#"
-                            class="button button--border active"
+                            class="btn__login button button--border active"
                             id="purpleButton">
                             Login
                         </a>
                         <a
                             href="#"
-                            class="button button--border"
+                            class="btn__up button button--border"
                             id="borderButton">
                             Sign Up
                         </a>
@@ -133,8 +133,210 @@
                                 </button>
                             </form>
                         </div>
-    
-                        <div class="page__euphoria"></div>
+                        <div class="page__euphoria euphoria">
+                            <div class="euphoria__wrapper">
+                                <div class="euphoria__wrap-title">
+                                    <h2 class="euphoria__title title">
+                                        My Info
+                                    </h2>
+                                    <h3 class="euphoria__subtitle subtitle">
+                                        Add Address
+                                    </h3>
+                                </div>
+                                <form
+                                    class="form-2 euphoria__form"
+                                    method="GET"
+                                    action="#">
+                                    <div class="euphoria__items items">
+                                        <div class="euphoria__item item">
+                                            <label
+                                                class="item__label"
+                                                for="firstName-2">
+                                                First Name*
+                                            </label>
+                                            <input
+                                                required
+                                                class="item__input item__input--euphoria"
+                                                type="text"
+                                                id="firstName-2"
+                                                placeholder="First Name">
+                                        </div>
+                                        <div class="euphoria__item item">
+                                            <label
+                                                class="item__label"
+                                                for="lastName-f2">
+                                                Last Name*
+                                            </label>
+                                            <input
+                                                required
+                                                class="item__input item__input--euphoria"
+                                                type="text"
+                                                id="lastName-f2"
+                                                placeholder="Last Name">
+                                        </div>
+                                        <div class="euphoria__item item">
+                                            <label
+                                                class="item__label"
+                                                for="country-f2">
+                                                Country Region*
+                                            </label>
+                                            <input
+                                                required
+                                                class="item__input item__input--euphoria"
+                                                type="text"
+                                                id="country-f2"
+                                                placeholder="Country Region">
+                                        </div>
+                                        <div class="euphoria__item item">
+                                            <label
+                                                class="item__label"
+                                                for="company-f2">
+                                                Company Name
+                                            </label>
+                                            <input
+                                                class="item__input item__input--euphoria"
+                                                type="text"
+                                                id="company-f2"
+                                                placeholder="Company (optional)">
+                                        </div>
+                                        <div class="euphoria__item item">
+                                            <label
+                                                class="item__label"
+                                                for="address-f2">
+                                                Street Address*
+                                            </label>
+                                            <input
+                                                required
+                                                class="item__input item__input--euphoria"
+                                                type="text"
+                                                id="address-f2"
+                                                placeholder="House number and street name">
+                                        </div>
+                                        <div class="euphoria__item item">
+                                            <label
+                                                class="item__label"
+                                                for="apt-f2">
+                                                Apt, suite, unit
+                                            </label>
+                                            <input
+                                                class="item__input item__input--euphoria"
+                                                type="text"
+                                                id="apt-f2"
+                                                placeholder="apartment, suite, unit, etc. (optional)">
+                                        </div>
+                                        <div class="euphoria__item item">
+                                            <label
+                                                class="item__label"
+                                                for="city-f2">
+                                                City*
+                                            </label>
+                                            <input
+                                                required
+                                                class="item__input item__input--euphoria"
+                                                type="text"
+                                                id="city-f2"
+                                                placeholder="Town City">
+                                        </div>
+                                        <div class="euphoria__item item">
+                                            <label
+                                                class="item__label"
+                                                for="state-f2">
+                                                State*
+                                            </label>
+                                            <select
+                                                required
+                                                class="item__input item__input--euphoria"
+                                                id="state-f2">
+                                                <option value="" disabled selected>
+                                                    State
+                                                </option>
+                                                <option value="UK">Ukraine</option>
+                                                <option value="PL">Poland</option>
+                                                <option value="US">USA</option>
+                                                <option value="FR">France</option>
+                                            </select>
+                                        </div>
+                                        <div class="euphoria__item item">
+                                            <label
+                                                class="item__label"
+                                                for="phone-f2">
+                                                Phone*
+                                            </label>
+                                            <input
+                                                required
+                                                class="item__input item__input--euphoria"
+                                                type="tel"
+                                                id="phone-f2"
+                                                placeholder="Phone">
+                                        </div>
+                                        <div class="euphoria__item item">
+                                            <label
+                                                class="item__label"
+                                                for="code-f2">
+                                                Postal Code*
+                                            </label>
+                                            <input
+                                                required
+                                                class="item__input item__input--euphoria"
+                                                type="text"
+                                                id="code-f2"
+                                                placeholder="Postal Code">
+                                        </div>
+                                        <div
+                                            class="euphoria__item item item--textarea">
+                                            <label
+                                                class="item__label item__placeholder--textarea"
+                                                for="messageEuphoria">
+                                                Delivery Instruction
+                                            </label>
+                                            <textarea
+                                                class="item__textarea item__textarea--euphoria"
+                                                name="message"
+                                                id="messageEuphoria"
+                                                placeholder="Delivery Instruction"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="euphoria__checkbox checkbox">
+                                        <div class="checkbox__item">
+                                            <input
+                                                required
+                                                class="checkbox__input"
+                                                type="checkBox"
+                                                id="checkShip-f2">
+                                            <label
+                                                class="checkbox__label"
+                                                for="checkShip-f2">
+                                                Set as default shipping address
+                                            </label>
+                                        </div>
+                                        <div class="checkbox__item">
+                                            <input
+                                                required
+                                                class="checkbox__input"
+                                                type="checkBox"
+                                                id="checkBilling-f2">
+                                            <label
+                                                class="checkbox__label"
+                                                for="checkBilling-f2">
+                                                Set as default billing address
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="euphoria__buttons">
+                                        <button
+                                            class="euphoria__btn button button--purple"
+                                            type="submit">
+                                            Save
+                                        </button>
+                                        <button
+                                            class="euphoria__btn button button--grey"
+                                            type="reset">
+                                            Cancel
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>

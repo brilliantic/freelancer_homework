@@ -22,6 +22,7 @@ body {
     max-width: 1250px;
     margin: 0 auto;
     box-sizing: content-box;
+    padding: 0 15px;
 }
 .footer {
     height: 200px;
@@ -116,25 +117,12 @@ body {
 .header__languages:hover::before {
     transform: translateY(-50%) rotate(180deg);
 }
-.button {
-    display: inline-flex;
-    min-height: 50px;
-    padding: 12px 48px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    color: #fff;
-    text-align: center;
-    font-weight: 500;
-    transition: background-color 0.3s ease, border 0.3s, color 0.3s;
+.header__btn {
+    display: flex;
+    gap: 29px;
 }
-.button:not(:last-child) {
-    margin-right: 29px;
-}
-.button--purple,
-.button--border {
+.header__btn a {
     border: 1px solid #3c4242;
-    color: #8a33fd;
 }
 .button.active {
     background: #8a33fd;
@@ -145,6 +133,7 @@ body {
 .page__consulting {
 }
 .consulting {
+    margin-bottom: 100px;
 }
 .consulting__wrap-title {
     display: flex;
@@ -182,7 +171,6 @@ body {
 /* ====================================================== */
 .form-1 {
     font-family: "Inter";
-    padding: 0 15px;
 }
 .consulting__form {
     display: flex;
@@ -197,14 +185,12 @@ body {
     position: relative;
     width: 591px;
 }
-
 .item__input {
     width: 100%;
     border: 1px solid #ddd;
     background: #f8f8f8;
-    font-size: 22px;
     padding: 21px 40px;
-    color: #37393f;
+    color: #807d7e;
 }
 .item__placeholder {
     color: #37393f;
@@ -238,10 +224,112 @@ body {
     color: #ffffff;
     font-size: 18px;
     font-weight: 600;
-
 }
 .consulting__btn:hover {
     background-color: #525eca;
     box-shadow: 0 0.5em 0.5em -0.4em #525eca;
 }
+/* =================================================== */
+.euphoria__wrapper {
+    font-family: "Causten";
+    max-width: 895px;
+    margin: 0 auto;
+}
+.euphoria__wrap-title {
+    margin-bottom: 50px;
+}
+.euphoria__title {
+    margin-bottom: 20px;
+}
+.subtitle {
+}
+.euphoria__subtitle {
+}
+.form-2 {
+}
+.euphoria__form {
+}
+.euphoria__items {
+    gap: 31px 42px;
+    margin-bottom: 30px;
+}
+.euphoria__item {
+    width: 426px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.item__label {
+    color: #3c4242;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.36px;
+}
+.item__input--euphoria {
+    padding: 18px 22px;
+}
+.item__input::placeholder,
+.item__textarea--euphoria::placeholder {
+    color: #807d7e;
+    font-size: 16px;
+}
+.item--textarea {
+}
+.item__placeholder--textarea {
+}
+.item__textarea {
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    font-size: 22px;
+    padding: 22px 40px;
+    min-height: 222px;
+    align-items: center;
+    resize: vertical;
+}
+.euphoria__checkbox {
+    margin-bottom: 50px;
+}
 
+.checkbox__item {
+    display: flex;
+    gap: 11px;
+}
+.checkbox__input {
+    width: 20px;
+    color: #BEBCBD;
+}
+.checkbox__input {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
+.checkbox__input::before {
+    content: '\2713';
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    border: 2px solid #BEBCBD;
+    width: 20px;
+    height: 20px;
+}
+.checkbox__input:checked::before {
+    color: #BEBCBD;
+    background-color: #8a33fd;
+    border: #8a33fd;
+}
+.checkbox__label {
+    color: #3c4242;
+    font-size: 20px;
+}
+.euphoria__buttons {
+    display: flex;
+    gap: 30px;
+}
+.euphoria__btn {
+    padding: 12px 40px;
+    font-size: 20px;
+}

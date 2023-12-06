@@ -273,14 +273,14 @@ body {
     background: #7124d5;
     box-shadow: 0 0.5em 0.5em -0.4em #7124d5;
 }
-.button--cancel:hover {
-    background: #d7d5d5;
-    box-shadow: 0 0.5em 0.5em -0.4em #d7d5d5;
-}
 .button--purple:active,
 .button--cancel:active {
     transform: translateY(4px);
     box-shadow: none;
+}
+.button--cancel:hover {
+    background: #d7d5d5;
+    box-shadow: 0 0.5em 0.5em -0.4em #d7d5d5;
 }
 .form-out__row.form-out__row--btn {
     display: inline-block;
