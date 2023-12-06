@@ -78,13 +78,25 @@ body {
     flex-direction: column;
     align-items: center;
 }
+.back-call__row {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    /* row-gap: 28px; */
+    width: 1200px;
+    gap: 35px;
+}
+.back-call__personal-data {
+    position: relative;
+    flex: 1 1 auto;
+    width: 100px;
+}
 .back-call__info,
 .back-call__personal-data {
     height: 65px;
 }
 .back-call__info,
 .back-call__personal-data,
-.back-call__wraper-message {
+.back-call__row-message {
     width: 100%;
     display: flex;
     gap: 35px;
@@ -98,7 +110,7 @@ body {
     font-size: 22px;
     padding: 0 45px;
 }
-.back-call__wraper-message {
+.back-call__row-message {
     position: relative;
     margin-bottom: 50px;
 }
@@ -142,14 +154,7 @@ body {
     transform: translateY(5px);
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
 }
-.back-call__personal-data {
-    position: relative;
-}
-.back-call__wraper {
-    display: flex;
-    width: 100%;
-    gap: 35px;
-}
+
 .back-call__label {
     position: absolute;
     left: 40px;
@@ -493,10 +498,24 @@ body {
     margin-bottom: 60px;
 }
 .button--cancel {
-background: #F6F6F6;
-color: #807D7E;
+    background: #f6f6f6;
+    color: #807d7e;
 
-text-align: center;
-font-size: 20px;
-font-weight: 700;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
 }
+
+/* .flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 28px 35px;
+}
+.flex__row {
+    border: 1px solid green;
+    background-color: lime;
+    flex: 1 1 auto;
+    width: 571px;
+    height: 50px;
+} */

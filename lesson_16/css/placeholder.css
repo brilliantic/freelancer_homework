@@ -1,13 +1,13 @@
-.form-white__personal-data input:focus + .form-white__label,
-.form-white__personal-data input:valid + .form-white__label,
+.back-call__personal-data input:focus + .back-call__label,
+.back-call__personal-data input:valid + .back-call__label,
 .block-shipping__personal-data input:focus + .block-shipping__label--card,
 .block-shipping__personal-data input:valid + .block-shipping__label--card {
     transform: translateY(-50%) scale(0.8);
     font-size: 16px;
     top: 20%;
 }
-.form-white__wraper-message textarea:focus + .form-white__label,
-.form-white__wraper-message textarea:valid + .form-white__label {
+.call-back__wraper-message textarea:focus + .back-call__label,
+.call-back__wraper-message textarea:valid + .back-call__label {
     transform: translateY(-50%) scale(0.8);
     font-size: 16px;
     top: 15px;
