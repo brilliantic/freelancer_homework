@@ -12,14 +12,14 @@
     font-size: 16px;
     top: 15px;
 } */
-.item input:focus + .item__placeholder--visible,
-.item input:valid + .item__placeholder--visible {
+.item input:focus + .placeholder--visible,
+.item input:valid + .placeholder--visible {
     transform: translateY(-50%) scale(0.8);
     font-size: 16px;
     top: 20%;
 }
-.item--textarea textarea:focus + .item__placeholder--visible,
-.item--textarea textarea:valid + .item__placeholder--visible {
+.item--textarea textarea:focus + .placeholder--visible,
+.item--textarea textarea:valid + .placeholder--visible {
     transform: translateY(-50%) scale(0.8);
     font-size: 16px;
     top: 15px;

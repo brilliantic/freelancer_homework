@@ -10,744 +10,838 @@
     <body>
         <div class="wraper">
             <header class="header">
-                <div class="header__container"></div>
+                <div class="header__container">
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <img src="img/logo.svg" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="header__search search">
+                        <div class="search__image">
+                            <img src="img/icons/search.svg" alt="Search">
+                        </div>
+                        <input
+                            type="text"
+                            class="search__input"
+                            placeholder="Search">
+                    </div>
+                    <div class="header__languages languages">
+                        English (united States)
+                        <ul class="languages__options">
+                            <li>English</li>
+                            <li>Français</li>
+                            <li>Español</li>
+                        </ul>
+                    </div>
+                    <div class="header__btn btn">
+                        <a
+                            href="#"
+                            class="btn__login button button--border active"
+                            id="purpleButton">
+                            Login
+                        </a>
+                        <a
+                            href="#"
+                            class="btn__up button button--border"
+                            id="borderButton">
+                            Sign Up
+                        </a>
+                    </div>
+                </div>
             </header>
             <main class="main">
                 <div class="main__container">
-
-                    <div class="flex">
-                        <div class="flex__row"></div>
-                        <div class="flex__row"></div>
-                        <div class="flex__row"></div>
-                        <div class="flex__row"></div>
-                    </div>
-
-                    <div class="call-back">
-                        <h4 class="call-back__label">Contact Us</h4>
-                        <h2 class="call-back__title">Request A Call Back !</h2>
-                        <form
-                            class="call-back__form back-call"
-                            method="GET"
-                            action="#">
-                            <div class="back-call__row">
-                                <div class="back-call__personal-data">
-                                    <input
-                                        required
-                                        class="back-call__input"
-                                        type="text"
-                                        id="name">
-                                    <label class="back-call__label" for="name">
-                                        Your Name
-                                    </label>
-                                </div>
-                                <div class="back-call__personal-data">
-                                    <input
-                                        required
-                                        class="back-call__input"
-                                        type="text"
-                                        id="email">
-                                    <label class="back-call__label" for="email">
-                                        Email Address
-                                    </label>
-                                </div>
+                    <div class="page">
+                        <div class="page__consulting consulting">
+                            <div class="consulting__wrap-title">
+                                <h1 class="consulting__title">
+                                    Request A Call Back !
+                                </h1>
+                                <h4 class="consulting__subtitle">Contact Us</h4>
                             </div>
-                            <div class="back-call__row">
-                                <div class="back-call__personal-data">
-                                    <input
-                                        required
-                                        class="back-call__input"
-                                        type="tel"
-                                        id="phone">
-                                    <label class="back-call__label" for="phone">
-                                        Phone Number
-                                    </label>
-                                </div>
-
-                                <div class="back-call__personal-data">
-                                    <input
-                                        required
-                                        class="back-call__input"
-                                        type="text"
-                                        id="subject">
-                                    <label
-                                        class="back-call__label"
-                                        for="subject">
-                                        Subject
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="back-call__row-message">
-                                <textarea
-                                    required
-                                    class="back-call__message"
-                                    id="message"></textarea>
-                                <label
-                                    class="back-call__label back-call__label--message"
-                                    for="message">
-                                    Message...
-                                </label>
-                            </div>
-                            <button class="back-call__btn" type="submit">
-                                Submit
-                            </button>
-                        </form>
-                    </div>
-
-                    <div class="check-out">
-                        <div class="check-out__wraper">
-                            <h2 class="check-out__title title">Check Out</h2>
-                            <h4 class="check-out__label label--title">
-                                Billing Details
-                            </h4>
                             <form
-                                class="check-out__form form-out"
+                                class="form-1 consulting__form"
                                 method="GET"
                                 action="#">
-                                <div class="form-out__row">
-                                    <div class="form-out__private private">
-                                        <label
-                                            class="private__label"
-                                            for="first-name">
-                                            First Name*
-                                        </label>
+                                <div class="consulting__items items">
+                                    <div class="consulting__item item">
                                         <input
                                             required
-                                            class="private__input"
+                                            class="item__input item__input--consulting"
                                             type="text"
-                                            id="first-name"
-                                            placeholder="First Name">
-                                    </div>
-                                    <div class="form-out__private private">
+                                            name="your name"
+                                            id="nameConsulting">
                                         <label
-                                            class="private__label"
-                                            for="last-name">
-                                            Last Name*
+                                            class="item__placeholder placeholder--visible"
+                                            for="nameConsulting">
+                                            Your Name
                                         </label>
+                                    </div>
+                                    <div class="consulting__item item">
                                         <input
                                             required
-                                            class="private__input"
-                                            type="text"
-                                            id="last-name"
-                                            placeholder="Last Name">
-                                    </div>
-                                </div>
-
-                                <div class="form-out__row">
-                                    <div class="form-out__private private">
+                                            class="item__input item__input--consulting"
+                                            type="email"
+                                            name="email"
+                                            id="emailConsulting">
                                         <label
-                                            class="private__label"
-                                            for="country">
-                                            Country Region*
+                                            class="item__placeholder placeholder--visible"
+                                            for="emailConsulting">
+                                            Email Address
                                         </label>
+                                    </div>
+                                    <div class="consulting__item item">
                                         <input
                                             required
-                                            class="private__input"
-                                            type="text"
-                                            id="country"
-                                            placeholder="Country Region">
-                                    </div>
-                                    <div class="form-out__private private">
+                                            class="item__input item__input--consulting"
+                                            type="tel"
+                                            name="phone"
+                                            id="phoneConsulting">
                                         <label
-                                            class="private__label"
-                                            for="company-name">
-                                            Company Name
+                                            class="item__placeholder placeholder--visible"
+                                            for="phoneConsulting">
+                                            Phone Number
                                         </label>
-                                        <input
-                                            class="private__input"
-                                            type="text"
-                                            id="company-name"
-                                            placeholder="Company Name">
                                     </div>
-                                </div>
-
-                                <div class="form-out__row">
-                                    <div class="form-out__private private">
-                                        <label
-                                            class="private__label"
-                                            for="address">
-                                            Street Address*
-                                        </label>
+                                    <div class="consulting__item item">
                                         <input
                                             required
-                                            class="private__input"
+                                            class="item__input item__input--consulting"
                                             type="text"
-                                            id="address"
-                                            placeholder="House number and street name">
-                                    </div>
-                                    <div class="form-out__private private">
+                                            name="subject"
+                                            id="subjectConsulting">
                                         <label
-                                            class="private__label"
-                                            for="unit">
-                                            Apt, suite, unit
+                                            class="item__placeholder placeholder--visible"
+                                            for="subjectConsulting">
+                                            Subject
                                         </label>
-                                        <input
-                                            class="private__input"
-                                            type="text"
-                                            id="unit"
-                                            placeholder="apartment, suite, unit, etc. (optional)">
                                     </div>
-                                </div>
-
-                                <div class="form-out__row">
-                                    <div class="form-out__private private">
-                                        <label
-                                            class="private__label"
-                                            for="city">
-                                            City*
-                                        </label>
-                                        <input
-                                            required
-                                            class="private__input"
-                                            type="text"
-                                            id="city"
-                                            placeholder="Town City">
-                                    </div>
-                                    <div class="form-out__private private">
-                                        <label
-                                            class="private__label private__label--state"
-                                            for="state">
-                                            State*
-                                        </label>
-                                        <select
-                                            required
-                                            class="private__input"
-                                            id="state">
-                                            <option value="" disabled selected>
-                                                State
-                                            </option>
-                                            <option value="UK">Ukraine</option>
-                                            <option value="PL">Poland</option>
-                                            <option value="US">USA</option>
-                                            <option value="FR">France</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-out__private private">
-                                        <label
-                                            class="private__label"
-                                            for="code">
-                                            Postal Code*
-                                        </label>
-                                        <input
-                                            class="private__input"
-                                            type="text"
-                                            id="code"
-                                            placeholder="Postal Code">
-                                    </div>
-                                </div>
-
-                                <div class="form-out__row form-out__row--phone">
-                                    <div class="form-out__private private">
-                                        <label
-                                            class="private__label"
-                                            for="form-out-phone">
-                                            Phone*
-                                        </label>
-                                        <input
-                                            required
-                                            class="private__input private__input--phone"
-                                            type="text"
-                                            id="form-out-phone"
-                                            placeholder="Phone">
-                                    </div>
-                                </div>
-
-                                <div class="form-out__row form-out__row--btn">
-                                    <button
-                                        class="form-out__btn button--purple"
-                                        type="submit">
-                                        Continue to delivery
-                                    </button>
                                     <div
-                                        class="form-out__private private private--checkbox">
-                                        <input
+                                        class="consulting__item item item--textarea">
+                                        <textarea
                                             required
-                                            class="private__input private__input--checkbox"
-                                            type="checkbox"
-                                            id="checkbox">
+                                            class="item__textarea item__textarea--consulting"
+                                            name="message"
+                                            id="messageConsulting"></textarea>
                                         <label
-                                            class="private__label private__label--checkbox"
-                                            for="checkbox">
-                                            Save my information for a faster
-                                            checkout
+                                            class="item__placeholder placeholder--visible placeholder--textarea"
+                                            for="messageConsulting">
+                                            Message...
                                         </label>
                                     </div>
                                 </div>
+                                <button
+                                    class="consulting__btn button"
+                                    type="submit">
+                                    Submit
+                                </button>
                             </form>
                         </div>
-                    </div>
-
-                    <div class="shipping">
-                        <div class="shipping__wraper">
-                            <form
-                                class="shipping__form form-shipping"
-                                action="#"
-                                method="GET">
-                                <div class="form-shipping__wraper">
-                                    <div class="form-shipping__block-title">
-                                        <h2 class="form-shipping__title">
-                                            Shipping Address
+                        <div class="page__euphoria euphoria">
+                            <div class="euphoria__form-info info">
+                                <div class="info__wrapper">
+                                    <div class="info__wrap-title">
+                                        <h2 class="info__title title">
+                                            My Info
                                         </h2>
-                                        <div class="form-shipping__text">
-                                            <p>
-                                                Select the address that matches
-                                                your card or payment method.
-                                            </p>
-                                        </div>
+                                        <h3 class="info__subtitle subtitle">
+                                            Add Address
+                                        </h3>
                                     </div>
-                                    <div class="form-shipping__unit">
-                                        <div
-                                            class="form-shipping__block block-shipping">
-                                            <input
-                                                checked
-                                                class="block-shipping__radio"
-                                                type="radio"
-                                                name="address-shipping"
-                                                value="address-shipping"
-                                                id="radio-address">
-                                            <label
-                                                for="radio-address"
-                                                class="block-shipping__label">
-                                                Same as Billing address
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="form-shipping__block block-shipping">
-                                            <input
-                                                class="block-shipping__radio"
-                                                type="radio"
-                                                name="address-shipping"
-                                                value="shipping"
-                                                id="radio-shipping">
-                                            <label
-                                                for="radio-shipping"
-                                                class="block-shipping__label">
-                                                Use a different shipping address
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-shipping__wraper">
-                                    <div class="form-shipping__block-title">
-                                        <h2 class="form-shipping__title">
-                                            Shipping Method
-                                        </h2>
-                                    </div>
-                                    <div class="form-shipping__unit">
-                                        <div
-                                            class="form-shipping__block block-shipping">
-                                            <div class="block-shipping__label">
-                                                Arrives by Monday, June 7
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="form-shipping__block block-shipping">
-                                            <div class="block-shipping__wraper">
-                                                <div
-                                                    class="block-shipping__label">
-                                                    Delivery Charges
-                                                </div>
-                                                <div
-                                                    class="block-shipping__price">
-                                                    $5.00
-                                                </div>
-                                            </div>
-                                            <div class="block-shipping__text">
-                                                <p>Additional fess may apply</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-shipping__wraper">
-                                    <div class="form-shipping__block-title">
-                                        <h2 class="form-shipping__title">
-                                            Payment Method
-                                        </h2>
-                                        <div class="form-shipping__text">
-                                            <p>
-                                                All transactions are secure and
-                                                encrypted.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="form-shipping__unit">
-                                        <div
-                                            class="form-shipping__block block-shipping form-shipping__block--pay">
-                                            <div
-                                                class="block-shipping__wrapper">
+                                    <form
+                                        class="info__form"
+                                        method="GET"
+                                        action="#">
+                                        <div class="info__items items">
+                                            <div class="info__item item">
+                                                <label
+                                                    class="item__label"
+                                                    for="firstName-2">
+                                                    First Name*
+                                                </label>
                                                 <input
-                                                    checked
-                                                    class="block-shipping__radio"
-                                                    type="radio"
-                                                    name="radio-payment"
-                                                    value="credit"
-                                                    id="radioCreditCard">
+                                                    required
+                                                    class="item__input item__input--info-form"
+                                                    type="text"
+                                                    id="firstName-2"
+                                                    name="first name"
+                                                    placeholder="First Name">
+                                            </div>
+                                            <div class="info__item item">
+                                                <label
+                                                    class="item__label"
+                                                    for="lastName-f2">
+                                                    Last Name*
+                                                </label>
+                                                <input
+                                                    required
+                                                    class="item__input item__input--info-form"
+                                                    type="text"
+                                                    id="lastName-f2"
+                                                    name="last name"
+                                                    placeholder="Last Name">
+                                            </div>
+                                            <div class="info__item item">
+                                                <label
+                                                    class="item__label"
+                                                    for="country-f2">
+                                                    Country Region*
+                                                </label>
+                                                <input
+                                                    required
+                                                    class="item__input item__input--info-form"
+                                                    type="text"
+                                                    id="country-f2"
+                                                    name="country"
+                                                    placeholder="Country Region">
+                                            </div>
+                                            <div class="info__item item">
+                                                <label
+                                                    class="item__label"
+                                                    for="company-f2">
+                                                    Company Name
+                                                </label>
+                                                <input
+                                                    class="item__input item__input--info-form"
+                                                    type="text"
+                                                    id="company-f2"
+                                                    name="company"
+                                                    placeholder="Company (optional)">
+                                            </div>
+                                            <div class="info__item item">
+                                                <label
+                                                    class="item__label"
+                                                    for="address-f2">
+                                                    Street Address*
+                                                </label>
+                                                <input
+                                                    required
+                                                    class="item__input item__input--info-form"
+                                                    type="text"
+                                                    id="address-f2"
+                                                    name="address"
+                                                    placeholder="House number and street name">
+                                            </div>
+                                            <div class="info__item item">
+                                                <label
+                                                    class="item__label"
+                                                    for="apt-f2">
+                                                    Apt, suite, unit
+                                                </label>
+                                                <input
+                                                    class="item__input item__input--info-form"
+                                                    type="text"
+                                                    id="apt-f2"
+                                                    name="apt"
+                                                    placeholder="apartment, suite, unit, etc. (optional)">
+                                            </div>
+                                            <div class="info__item item">
+                                                <label
+                                                    class="item__label"
+                                                    for="city-f2">
+                                                    City*
+                                                </label>
+                                                <input
+                                                    required
+                                                    class="item__input item__input--info-form"
+                                                    type="text"
+                                                    id="city-f2"
+                                                    placeholder="Town City">
+                                            </div>
+                                            <div class="info__item item">
+                                                <label
+                                                    class="item__label"
+                                                    for="state-f2">
+                                                    State*
+                                                </label>
+                                                <select
+                                                    required
+                                                    class="item__select select"
+                                                    name="state"
+                                                    id="state-f2">
+                                                    <option
+                                                        class="select__option"
+                                                        disabled
+                                                        selected
+                                                        value="">
+                                                        State
+                                                    </option>
+                                                    <option
+                                                        class="select__option"
+                                                        value="UK">
+                                                        Ukraine
+                                                    </option>
+                                                    <option
+                                                        class="select__option"
+                                                        value="PL">
+                                                        Poland
+                                                    </option>
+                                                    <option
+                                                        class="select__option"
+                                                        value="US">
+                                                        USA
+                                                    </option>
+                                                    <option
+                                                        class="select__option"
+                                                        value="FR">
+                                                        France
+                                                    </option>
+                                                </select>
+                                            </div>
+                                            <div class="info__item item">
+                                                <label
+                                                    class="item__label"
+                                                    for="phone-f2">
+                                                    Phone*
+                                                </label>
+                                                <input
+                                                    required
+                                                    class="item__input item__input--info-form"
+                                                    type="tel"
+                                                    id="phone-f2"
+                                                    placeholder="Phone">
+                                            </div>
+                                            <div class="info__item item">
+                                                <label
+                                                    class="item__label"
+                                                    for="code-f2">
+                                                    Postal Code*
+                                                </label>
+                                                <input
+                                                    required
+                                                    class="item__input item__input--info-form"
+                                                    type="text"
+                                                    id="code-f2"
+                                                    placeholder="Postal Code">
+                                            </div>
+                                            <div
+                                                class="info__item item item--textarea">
+                                                <label
+                                                    class="item__label placeholder--textarea"
+                                                    for="messageEuphoria">
+                                                    Delivery Instruction
+                                                </label>
+                                                <textarea
+                                                    class="item__textarea item__textarea--info-form"
+                                                    name="message"
+                                                    id="messageEuphoria"
+                                                    placeholder="Delivery Instruction"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="info__checkbox checkbox">
+                                            <div class="checkbox__item">
+                                                <input
+                                                    required
+                                                    class="checkbox__input"
+                                                    type="checkBox"
+                                                    id="checkShip-f2">
+                                                <label
+                                                    class="checkbox__label"
+                                                    for="checkShip-f2">
+                                                    Set as default shipping
+                                                    address
+                                                </label>
+                                            </div>
+                                            <div class="checkbox__item">
+                                                <input
+                                                    required
+                                                    class="checkbox__input"
+                                                    type="checkBox"
+                                                    id="checkBilling-f2">
+                                                <label
+                                                    class="checkbox__label"
+                                                    for="checkBilling-f2">
+                                                    Set as default billing
+                                                    address
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="info__buttons">
+                                            <button
+                                                class="info__btn button button--purple"
+                                                type="submit">
+                                                Save
+                                            </button>
+                                            <button
+                                                class="info__btn button button--grey"
+                                                type="reset">
+                                                Cancel
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="euphoria__form-check check-out">
+                                <div class="check-out__wrapper">
+                                    <div class="check-out__details details">
+                                        <div class="details__wrap-title">
+                                            <h2 class="details__title title">
+                                                Check Out
+                                            </h2>
+                                            <h3
+                                                class="details__subtitle subtitle">
+                                                Billing Details
+                                            </h3>
+                                        </div>
+                                        <form
+                                            class="details__form form"
+                                            method="GET"
+                                            action="#">
+                                            <div class="form__items items">
+                                                <div class="form__item item">
+                                                    <label
+                                                        class="item__label"
+                                                        for="firstName-3">
+                                                        First Name*
+                                                    </label>
+                                                    <input
+                                                        required
+                                                        class="item__input item__input--form"
+                                                        type="text"
+                                                        id="firstName-3"
+                                                        name="first name"
+                                                        placeholder="First Name">
+                                                </div>
+                                                <div class="form__item item">
+                                                    <label
+                                                        class="item__label"
+                                                        for="lastName-f3">
+                                                        Last Name*
+                                                    </label>
+                                                    <input
+                                                        required
+                                                        class="item__input item__input--form"
+                                                        type="text"
+                                                        id="lastName-f3"
+                                                        name="last name"
+                                                        placeholder="Last Name">
+                                                </div>
+                                                <div class="form__item item">
+                                                    <label
+                                                        class="item__label"
+                                                        for="country-f3">
+                                                        Country Region*
+                                                    </label>
+                                                    <input
+                                                        required
+                                                        class="item__input item__input--form"
+                                                        type="text"
+                                                        id="country-f3"
+                                                        name="country"
+                                                        placeholder="Country Region">
+                                                </div>
+                                                <div class="form__item item">
+                                                    <label
+                                                        class="item__label"
+                                                        for="company-f3">
+                                                        Company Name
+                                                    </label>
+                                                    <input
+                                                        class="item__input item__input--form"
+                                                        type="text"
+                                                        id="company-f3"
+                                                        name="company"
+                                                        placeholder="Company (optional)">
+                                                </div>
+                                                <div class="form__item item">
+                                                    <label
+                                                        class="item__label"
+                                                        for="address-f3">
+                                                        Street Address*
+                                                    </label>
+                                                    <input
+                                                        required
+                                                        class="item__input item__input--form"
+                                                        type="text"
+                                                        id="address-f3"
+                                                        name="address"
+                                                        placeholder="House number and street name">
+                                                </div>
+                                                <div class="form__item item">
+                                                    <label
+                                                        class="item__label"
+                                                        for="apt-f3">
+                                                        Apt, suite, unit
+                                                    </label>
+                                                    <input
+                                                        class="item__input item__input--form"
+                                                        type="text"
+                                                        id="apt-f3"
+                                                        name="apt"
+                                                        placeholder="apartment, suite, unit, etc. (optional)">
+                                                </div>
+
                                                 <div
-                                                    class="block-shipping__info">
+                                                    class="form__item item item--33p">
+                                                    <label
+                                                        class="item__label"
+                                                        for="city-f3">
+                                                        City*
+                                                    </label>
+                                                    <input
+                                                        required
+                                                        class="item__input item__input--form"
+                                                        type="text"
+                                                        id="city-f3"
+                                                        placeholder="Town City">
+                                                </div>
+                                                <div
+                                                    class="form__item item item--33p">
+                                                    <label
+                                                        class="item__label"
+                                                        for="state-f3">
+                                                        State*
+                                                    </label>
+                                                    <select
+                                                        required
+                                                        class="item__select select"
+                                                        name="statte"
+                                                        id="state-f3">
+                                                        <option
+                                                            class="select__option"
+                                                            value=""
+                                                            disabled
+                                                            selected>
+                                                            State
+                                                        </option>
+                                                        <option
+                                                            class="select__option"
+                                                            value="UK">
+                                                            Ukraine
+                                                        </option>
+                                                        <option
+                                                            class="select__option"
+                                                            value="PL">
+                                                            Poland
+                                                        </option>
+                                                        <option
+                                                            class="select__option"
+                                                            value="US">
+                                                            USA
+                                                        </option>
+                                                        <option
+                                                            class="select__option"
+                                                            value="FR">
+                                                            France
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div
+                                                    class="form__item item item--33p">
+                                                    <label
+                                                        class="item__label"
+                                                        for="code-f3">
+                                                        Postal Code*
+                                                    </label>
+                                                    <input
+                                                        required
+                                                        class="item__input item__input--form"
+                                                        type="text"
+                                                        id="code-f3"
+                                                        placeholder="Postal Code">
+                                                </div>
+                                                <div class="form__item item">
+                                                    <label
+                                                        class="item__label"
+                                                        for="phone-f3">
+                                                        Phone*
+                                                    </label>
+                                                    <input
+                                                        required
+                                                        class="item__input item__input--form"
+                                                        type="tel"
+                                                        id="phone-f3"
+                                                        placeholder="Phone">
+                                                </div>
+                                            </div>
+                                            <div class="form__buttons">
+                                                <button
+                                                    class="form__btn button button--purple"
+                                                    type="submit">
+                                                    Continue to delivery
+                                                </button>
+                                            </div>
+                                            <div
+                                                class="form__checkbox checkbox">
+                                                <div class="checkbox__item">
+                                                    <input
+                                                        required
+                                                        class="checkbox__input"
+                                                        type="checkBox"
+                                                        id="checkBilling-f3">
+                                                    <label
+                                                        class="checkbox__label"
+                                                        for="checkBilling-f3">
+                                                        Save my information for
+                                                        a faster checkout
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <form class="check-out__shipping shipping">
+                                        <div class="shipping__items">
+                                            <div class="shipping__wrap-title">
+                                                <h2
+                                                    class="shipping__title title">
+                                                    Shipping Address
+                                                </h2>
+                                                <div
+                                                    class="shipping__text text">
+                                                    <p>
+                                                        Select the address that
+                                                        matches your card or
+                                                        payment method.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="shipping__item item-shipping">
+                                                <div class="item-shipping__row">
+                                                    <input
+                                                        checked
+                                                        class="item-shipping__radio"
+                                                        type="radio"
+                                                        name="address-shipping"
+                                                        value="address-shipping"
+                                                        id="radio-address">
+
+                                                    <label
+                                                        for="radio-address"
+                                                        class="item-shipping__label item-shipping__label--radio">
+                                                        Same as Billing address
+                                                    </label>
+                                                </div>
+                                                <div class="item-shipping__row">
+                                                    <input
+                                                        class="item-shipping__radio"
+                                                        type="radio"
+                                                        name="address-shipping"
+                                                        value="shipping"
+                                                        id="radio-shipping">
+                                                    <label
+                                                        for="radio-shipping"
+                                                        class="item-shipping__label item-shipping__label--radio">
+                                                        Use a different shipping
+                                                        address
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="shipping__wrap-title">
+                                                <h2
+                                                    class="shipping__title title">
+                                                    Shipping Method
+                                                </h2>
+                                            </div>
+                                            <div
+                                                class="shipping__item item-shipping">
+                                                <div class="item-shipping__row">
+                                                    <label
+                                                        class="item-shipping__label">
+                                                        Arrives by Monday, June
+                                                        7
+                                                    </label>
+                                                </div>
+                                                <div class="item-shipping__row">
+                                                    <div
+                                                        class="item-shipping__label">
+                                                        <div
+                                                            class="item-shipping__wraper-price">
+                                                            <div
+                                                                class="item-shipping__block">
+                                                                Delivery Charges
+                                                            </div>
+                                                            <div
+                                                                class="item-shipping__price">
+                                                                $5.00
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="item-shipping__text">
+                                                            <p>
+                                                                Additional fess
+                                                                may apply
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="shipping__wrap-title">
+                                                <h2
+                                                    class="shipping__title title">
+                                                    Payment Method
+                                                </h2>
+                                                <div
+                                                    class="shipping__text text">
+                                                    <p>
+                                                        All transactions are
+                                                        secure and encrypted.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="shipping__item item-shipping">
+                                                <div
+                                                    class="item-shipping__row item-shipping__row--info">
+                                                    <input
+                                                        checked
+                                                        class="item-shipping__radio item-shipping__radio--active"
+                                                        type="radio"
+                                                        name="radio-payment"
+                                                        value="creditCart"
+                                                        id="radioCreditCard">
+
                                                     <label
                                                         for="radioCreditCard"
-                                                        class="block-shipping__label">
-                                                        Credit Card
-                                                    </label>
-                                                    <div
-                                                        class="block-shipping__text">
-                                                        <p>
+                                                        class="item-shipping__label item-shipping__label--radio">
+                                                        <span
+                                                            class="item-shipping__title">
+                                                            Credit Card
+                                                        </span>
+                                                        <span
+                                                            class="item-shipping__text">
                                                             We accept all major
                                                             credit cards.
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-shipping__pay">
-                                                <img
-                                                    src="img/icons/pay/pay.svg"
-                                                    alt="Pay">
-                                                <img
-                                                    src="img/icons/pay/visa.svg"
-                                                    alt="Visa">
-                                                <img
-                                                    src="img/icons/pay/paypal.svg"
-                                                    alt="Paypal">
-                                                <img
-                                                    src="img/icons/pay/paypass.svg"
-                                                    alt="Paypass">
-                                            </div>
-
-                                            <div class="block-shipping__wraper">
-                                                <div
-                                                    class="block-shipping__personal-data">
-                                                    <input
-                                                        required
-                                                        class="block-shipping__input"
-                                                        type="tel"
-                                                        id="numCard"
-                                                        maxlength="16">
-                                                    <label
-                                                        class="block-shipping__label block-shipping__label--card"
-                                                        for="numCard">
-                                                        Card number
-                                                    </label>
-                                                </div>
-                                                <div
-                                                    class="block-shipping__personal-data">
-                                                    <input
-                                                        required
-                                                        class="block-shipping__input"
-                                                        type="text"
-                                                        id="nameCard">
-                                                    <label
-                                                        class="block-shipping__label block-shipping__label--card"
-                                                        for="nameCard">
-                                                        Name of card
-                                                    </label>
-                                                </div>
-                                            </div>
-
-                                            <div class="block-shipping__wraper">
-                                                <div
-                                                    class="block-shipping__personal-data">
-                                                    <input
-                                                        required
-                                                        class="block-shipping__input"
-                                                        type="tel"
-                                                        id="date"
-                                                        maxlength="5"
-                                                        oninput="formatDate(this)">
-                                                    <label
-                                                        class="block-shipping__label block-shipping__label--card"
-                                                        for="date">
-                                                        Expiration date (MM/YY)
-                                                    </label>
-                                                </div>
-                                                <div
-                                                    class="block-shipping__personal-data block-shipping__personal-data--btn">
-                                                    <input
-                                                        required
-                                                        class="block-shipping__input"
-                                                        type="password"
-                                                        id="securityCode"
-                                                        maxlength="3">
-                                                    <label
-                                                        class="block-shipping__label block-shipping__label--card"
-                                                        for="securityCode">
-                                                        Security Code
-                                                    </label>
-                                                    <button
-                                                        class="block-shipping__btn"
-                                                        type="button"></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="form-shipping__block block-shipping form-shipping__block--pay">
-                                            <div
-                                                class="block-shipping__wrapper">
-                                                <input
-                                                    class="block-shipping__radio"
-                                                    type="radio"
-                                                    name="radio-payment"
-                                                    value="cash"
-                                                    id="radioCash">
-                                                <div
-                                                    class="block-shipping__info">
-                                                    <label
-                                                        for="radioCash"
-                                                        class="block-shipping__label">
-                                                        Cash on delivery
+                                                        </span>
                                                     </label>
                                                     <div
-                                                        class="block-shipping__text">
-                                                        <p>
+                                                        class="item-shipping__block-pay">
+                                                        <div
+                                                            class="item-shipping__pay">
+                                                            <img
+                                                                src="img/icons/pay.svg"
+                                                                alt="Pay">
+                                                            <img
+                                                                src="img/icons/visa.svg"
+                                                                alt="Visa">
+                                                            <img
+                                                                src="img/icons/paypal.svg"
+                                                                alt="Paypal">
+                                                            <img
+                                                                src="img/icons/paypass.svg"
+                                                                alt="Paypass">
+                                                        </div>
+
+                                                        <div
+                                                            class="item-shipping__inputs input-card items">
+                                                            <div
+                                                                class="input-card__item item">
+                                                                <input
+                                                                    required
+                                                                    class="input-card__input"
+                                                                    type="number"
+                                                                    id="numCard">
+                                                                <label
+                                                                    class="input-card__label placeholder--visible"
+                                                                    for="numCard">
+                                                                    Card number
+                                                                </label>
+                                                            </div>
+                                                            <div
+                                                                class="input-card__item item">
+                                                                <input
+                                                                    required
+                                                                    class="input-card__input"
+                                                                    type="text"
+                                                                    id="nameCard">
+                                                                <label
+                                                                    class="input-card__label placeholder--visible"
+                                                                    for="nameCard">
+                                                                    Name of card
+                                                                </label>
+                                                            </div>
+                                                            <div
+                                                                class="input-card__item item">
+                                                                <input
+                                                                    required
+                                                                    class="input-card__input"
+                                                                    type="tel"
+                                                                    id="date"
+                                                                    maxlength="5"
+                                                                    oninput="formatDate(this)">
+                                                                <label
+                                                                    class="input-card__label placeholder--visible"
+                                                                    for="date">
+                                                                    Expiration
+                                                                    date (MM/YY)
+                                                                </label>
+                                                            </div>
+                                                            <div
+                                                                class="input-card__item item">
+                                                                <input
+                                                                    required
+                                                                    class="input-card__input"
+                                                                    type="password"
+                                                                    id="securityCode"
+                                                                    maxlength="3">
+                                                                <label
+                                                                    class="input-card__label placeholder--visible"
+                                                                    for="securityCode">
+                                                                    Security
+                                                                    Code
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-shipping__row">
+                                                    <input
+                                                        class="item-shipping__radio"
+                                                        type="radio"
+                                                        name="radio-payment"
+                                                        value="cash"
+                                                        id="radioCash">
+                                                    <label
+                                                        for="radioCash"
+                                                        class="item-shipping__label item-shipping__label--radio">
+                                                        <span
+                                                            class="item-shipping__title">
+                                                            Cash on delivery
+                                                        </span>
+                                                        <span
+                                                            class="item-shipping__text">
                                                             Pay with cash upon
                                                             delivery.
-                                                        </p>
-                                                    </div>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="item-shipping__row">
+                                                    <input
+                                                        class="item-shipping__radio"
+                                                        type="radio"
+                                                        name="radio-payment"
+                                                        value="paypal"
+                                                        id="radioPaypal">
+                                                    <label
+                                                        for="radioPaypal"
+                                                        class="item-shipping__label item-shipping__label--radio">
+                                                        <span
+                                                            class="item-shipping__title">
+                                                            Paypol
+                                                        </span>
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div
-                                            class="form-shipping__block block-shipping form-shipping__block--pay">
-                                            <input
-                                                class="block-shipping__radio"
-                                                type="radio"
-                                                name="radio-payment"
-                                                value="paypal"
-                                                id="radioPaypal">
-                                            <label
-                                                for="radioPaypal"
-                                                class="block-shipping__label">
-                                                Paypal
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="form-shipping__btn button--purple"
-                                        type="submit">
-                                        Pay Now
-                                    </button>
+                                        <button
+                                            class="check-out__btn button--purple"
+                                            type="submit">
+                                            Pay Now
+                                        </button>
+                                    </form>
                                 </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="info">
-                        <div class="info__wraper">
-                            <h2 class="info__title title">My Info</h2>
-                            <h4 class="info__label label--title">
-                                Add Address
-                            </h4>
-                            <form
-                                class="info__form form-info"
-                                method="GET"
-                                action="#">
-                                <div class="form-info__row">
-                                    <div class="form-info__private private">
-                                        <label
-                                            class="private__label"
-                                            for="firstName">
-                                            First Name*
-                                        </label>
-                                        <input
-                                            required
-                                            class="private__input"
-                                            type="text"
-                                            id="firstName"
-                                            placeholder="First Name">
-                                    </div>
-                                    <div class="form-info__private private">
-                                        <label
-                                            class="private__label"
-                                            for="lastName">
-                                            Last Name*
-                                        </label>
-                                        <input
-                                            required
-                                            class="private__input"
-                                            type="text"
-                                            id="lastName"
-                                            placeholder="Last Name">
-                                    </div>
-                                </div>
-
-                                <div class="form-info__row">
-                                    <div class="form-info__private private">
-                                        <label
-                                            class="private__label"
-                                            for="infoCountry">
-                                            Country Region*
-                                        </label>
-                                        <input
-                                            required
-                                            class="private__input"
-                                            type="text"
-                                            id="infoCountry"
-                                            placeholder="Country Region">
-                                    </div>
-                                    <div class="form-info__private private">
-                                        <label
-                                            class="private__label"
-                                            for="companyName">
-                                            Company Name
-                                        </label>
-                                        <input
-                                            class="private__input"
-                                            type="text"
-                                            id="companyName"
-                                            placeholder="Company (optional)">
-                                    </div>
-                                </div>
-
-                                <div class="form-info__row">
-                                    <div class="form-info__private private">
-                                        <label
-                                            class="private__label"
-                                            for="streetAddress">
-                                            Street Address*
-                                        </label>
-                                        <input
-                                            required
-                                            class="private__input"
-                                            type="text"
-                                            id="streetAddress"
-                                            placeholder="House number and street name">
-                                    </div>
-                                    <div class="form-info__private private">
-                                        <label
-                                            class="private__label"
-                                            for="infoUnit">
-                                            Apt, suite, unit
-                                        </label>
-                                        <input
-                                            class="private__input"
-                                            type="text"
-                                            id="infoUnit"
-                                            placeholder="apartment, suite, unit, etc. (optional)">
-                                    </div>
-                                </div>
-
-                                <div class="form-info__row">
-                                    <div class="form-info__private private">
-                                        <label
-                                            class="private__label"
-                                            for="infoCity">
-                                            City*
-                                        </label>
-                                        <input
-                                            required
-                                            class="private__input"
-                                            type="text"
-                                            id="infoCity"
-                                            placeholder="Town City">
-                                    </div>
-                                    <div class="form-info__private private">
-                                        <label
-                                            class="private__label private__label--state"
-                                            for="infoState">
-                                            State*
-                                        </label>
-                                        <select
-                                            required
-                                            class="private__input"
-                                            id="infoState">
-                                            <option value="" disabled selected>
-                                                State
-                                            </option>
-                                            <option value="UK">Ukraine</option>
-                                            <option value="PL">Poland</option>
-                                            <option value="US">USA</option>
-                                            <option value="FR">France</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="form-info__row">
-                                    <div class="form-info__private private">
-                                        <label
-                                            class="private__label"
-                                            for="infoPhone">
-                                            Phone*
-                                        </label>
-                                        <input
-                                            required
-                                            class="private__input"
-                                            type="tel"
-                                            id="infoPhone"
-                                            placeholder="Phone">
-                                    </div>
-                                    <div class="form-info__private private">
-                                        <label
-                                            class="private__label"
-                                            for="postalCode">
-                                            Postal Code*
-                                        </label>
-                                        <input
-                                            class="private__input"
-                                            type="number"
-                                            id="postalCode"
-                                            placeholder="Postal Code">
-                                    </div>
-                                </div>
-
-                                <div class="form-info__block">
-                                    <label
-                                        class="form-info__label form-info__label--message"
-                                        for="instruction">
-                                        Delivery Instruction
-                                    </label>
-                                    <textarea
-                                        class="form-info__message"
-                                        id="instruction"
-                                        placeholder="Delivery Instruction"></textarea>
-                                </div>
-
-                                <div class="form-info__button">
-                                    <div class="form-info__wrap-check">
-                                        <div
-                                            class="form-info__checkbox private private--checkbox">
-                                            <input
-                                                required
-                                                class="private__input private__input--checkbox"
-                                                type="checkBox"
-                                                id="checkShip">
-                                            <label
-                                                class="private__label private__label--checkbox"
-                                                for="checkShip">
-                                                Set as default shipping address
-                                            </label>
-                                        </div>
-                                        <div
-                                            class="form-info__checkbox private private--checkbox">
-                                            <input
-                                                required
-                                                class="private__input private__input--checkbox"
-                                                type="checkbox"
-                                                id="checkBilling">
-                                            <label
-                                                class="private__label private__label--checkbox"
-                                                for="checkBilling">
-                                                Set as default billing address
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="form-info__btn button--purple"
-                                        type="submit">
-                                        Save
-                                    </button>
-                                    <button
-                                        class="form-info__btn button--cancel"
-                                        type="reset">
-                                        Cancel
-                                    </button>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </main>
             <footer class="footer"></footer>
         </div>
+
+        <script src="js/btn.js"></script>
         <script src="js/formatDate.js"></script>
     </body>
 </html>
