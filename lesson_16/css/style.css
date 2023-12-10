@@ -397,6 +397,13 @@ body {
     margin-bottom: 20px;
 }
 .form__btn {
+    padding: 16px 20px;
+    color: #FFF;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: none;
 }
 /* =============================== */
 .shipping {
@@ -503,9 +510,6 @@ body {
 .item-shipping__radio:checked + .item-shipping__label--radio::after {
     display: block;
 }
-.item-shipping__label--radio:not(:last-child) {
-    /* margin-bottom: 30px; */
-}
 .item-shipping__wraper-price {
     display: flex;
     justify-content: space-between;
@@ -536,7 +540,6 @@ body {
     width: 80px;
     border-radius: 10px;
 }
-
 .item-shipping__inputs {
 }
 .input-card {
