@@ -69,6 +69,7 @@ body {
     gap: 41px;
 }
 .list-our__item {
+    position: relative;
     color: #fff;
     font-family: "Raleway";
     font-size: 18px;
@@ -76,8 +77,18 @@ body {
     line-height: 127%; /* 22.86px */
     cursor: pointer;
 }
-.list-our__item:hover {
-    text-decoration-line: underline;
+.list-our__item::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+.list-our__item:hover::before {
+    width: 100%;
 }
 @media (max-width: 839.98px) {
     .our__titles {
@@ -110,35 +121,62 @@ body {
     }
 }
 
-
 .our__items {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 30px;
+    /* row-gap: 30px; */
     /* margin: 0 -15px; */
+    gap: 30px 2.66%;
 }
 .our__column {
-    padding: 0 15px;
-    flex: 0 1 25%;
+    flex: 0 0 23%;
 }
-
 .our__item {
     cursor: pointer;
+    position: relative;
 }
 .item {
-    min-height: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .item__image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.item__image img {
+    position: relative;
     width: 100%;
     height: 100%;
-    aspect-ratio: 271 / 270;
+    aspect-ratio: 270 / 270;
     object-fit: cover;
-    border-radius: 5px;
+    transform: scale(1.01);
+    transition: transform 0.3s ease-in-out;
+}
+.item__image::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: #33333366;
+    transition: height 0.2s ease-in-out;
+    transform: rotate(90deg);
+}
+.item__image:hover::before {
+    height: 100%;
+}
+.item__image:hover img {
+    transform: scale(1.1);
 }
 .item__image:not(:last-child) {
     margin-bottom: 17px;
+}
+.item__info {
 }
 .item__name,
 .item__price {
@@ -155,32 +193,33 @@ body {
 }
 @media (min-width: 899.98px) {
     .our {
-    padding: 94px 0;
-  }
+        padding: 94px 0;
+    }
 }
 @media (max-width: 899.98px) {
-      .our {
-    padding: 50px 0;
-  }
+    .our {
+        padding: 50px 0;
+    }
     .our__column {
-        flex: 0 1 50%;
+        flex: 0 1 48.65%;
     }
     .item__name,
     .item__price {
         font-size: 20px;
     }
     .item__image:not(:last-child) {
-    margin-bottom: 12px;
-}
-.our__items {
-  row-gap: 20px;
-}
+        margin-bottom: 12px;
+    }
+    .our__items {
+        row-gap: 20px;
+    }
 }
 @media (max-width: 479.98px) {
-  .our {
-    padding: 25px 0;
-  }
-      .our__column {
+    .our {
+        padding: 25px 0;
+    }
+    .our__column {
         flex: 0 1 100%;
     }
 }
+
