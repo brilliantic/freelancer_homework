@@ -1,79 +1,36 @@
-.items {
-    /* display: flex;
-    flex-wrap: wrap;
-    width: 100%; */
+.white-text {
+    color: #fff;
 }
-.item {
-    /* flex: 1 1 47.55%; */
+.grey--text {
+    color: #818181;
+}
+.titles {
+    display: flex;
+    flex-direction: column;
 }
 .title {
-    /* color: #3c4242;
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 33.5px; /* 119.643%
-    letter-spacing: 0.56px; */
+    font-family: "DM Serif Text";
 }
-.subtitle {
-    /* color: #3c4242;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 33.5px; /* 152.273% 
-    letter-spacing: 0.44px; */
-}
-.button {
+.item {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
     position: relative;
-    display: inline-flex;
-    justify-content: center;
+}
+.titles--center,
+.btn--center {
     align-items: center;
-    text-align: center;
-    text-transform: capitalize;
-    min-height: 50px;
-    border-radius: 8px;
-    font-weight: 500;
-    padding: 12px 48px;
-    transition: background-color 0.3s ease, border 0.3s, color 0.3s, box-shadow 0.3s;
 }
-.button:active::before {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    z-index: -1;
-    transition: opacity 0.3s;
+
+
+.module__btn {
+    transition: background-color 0.3s ease,  box-shadow 0.3s;
 }
-.button:active:hover::before {
-    opacity: 0.5;
+.module__btn:hover {
+    background-color: #d15f35;
 }
-.button:active:active {
+.module__btn:active:active {
     transform: translateY(5px);
-}
-.button--purple,
-.button--grey {
-    text-align: center;
-    font-size: 18px;
-    position: relative;
-    transition: box-shadow 0.3s, background-color 0.3s;
-}
-.button--purple {
-    background: #8a33fd;
-    color: #fff;
-    text-align: center;
-    font-family: "Causten";
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 8px;
-    padding: 16px 20px;
-}
-.button--purple:hover {
-    background: #7124d5;
-    box-shadow: 0 0.5em 0.5em -0.4em #7124d5;
-}
-.button--purple:active,
-.button--grey:active {
-    transform: translateY(4px);
-    box-shadow: none;
-}
-.button--grey:hover {
-    background: #d7d5d5;
-    box-shadow: 0 0.5em 0.5em -0.4em #d7d5d5;
 }
