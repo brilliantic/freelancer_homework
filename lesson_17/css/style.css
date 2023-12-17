@@ -204,6 +204,10 @@ body {
   line-height: 30px; /* 187.5% */
   background-color: #ff7a49;
 }
+.popular {
+  background: #fefaf4;
+  padding: 80px 0 114px;
+}
 .popular__titles {
   margin-bottom: 53px;
 }
