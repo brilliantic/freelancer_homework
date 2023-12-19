@@ -1,0 +1,30 @@
+@import url(fonts.css);
+@import url(reset.css);
+@import url(components.css);
+
+html,
+body {
+  height: 100%;
+  font-family: "Causten";
+  font-size: 18px;
+  color: #807d7e;
+  width: auto;
+  color: #000;
+}
+.wraper {
+  overflow: clip;
+  min-height: 100%;
+  position: relative;
+}
+.main {
+}
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding: 0 15px;
+}
+.footer {
+  height: 200px;
+}
+/* ================================================ */
