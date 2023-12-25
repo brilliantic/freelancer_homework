@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 @import url(reset.css);
-=======
+
 @import url("https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Inter:regular,500&display=swap");
 @font-face {
@@ -99,4 +98,3 @@ h1 {
 .accent{
     font-weight: 600;
 }
->>>>>>> 944b6c3c6bd90d5b067943c08ba99ab821620b04

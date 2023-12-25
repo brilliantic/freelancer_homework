@@ -5,292 +5,255 @@
 
 @import url(reset.css);
 
-body{
-<<<<<<< HEAD
-    font-family: "Inter", sans-serif;
-=======
-    font-family: Inter, sans-serif;
->>>>>>> 944b6c3c6bd90d5b067943c08ba99ab821620b04
-    font-size: 18px;
-    color: #7d7d7d;
-    width: auto;
+body {
+  font-family: "Inter", sans-serif;
+
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  color: #7d7d7d;
+  width: auto;
 }
 
 .header,
-.footer{
-<<<<<<< HEAD
-    margin: 50px auto;
-    text-align: center;
+.footer {
+  margin: 50px auto;
+  text-align: center;
 }
-.nav{
-    display: inline-block;
+.nav {
+  display: inline-block;
 }
-.nav li{
-    display: inline-block;
-    vertical-align: middle;
+.nav li {
+  display: inline-block;
+  vertical-align: middle;
 }
 .link-red,
 .link-blue,
 .link-green {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    font-style: oblique;
-    margin-right: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: oblique;
+  margin-right: 15px;
 }
-.link-red{
-    color: rgb(172, 7, 45);
+.link-red {
+  color: rgb(172, 7, 45);
 }
-.link-blue{
-    color: #6B77E5;
+.link-blue {
+  color: #6b77e5;
 }
-.link-green{
-    color: #04a344;
-}
-=======
-    text-align: center;
+.link-green {
+  color: #04a344;
+  text-align: center;
 }
 
 .link-red,
 .link-blue,
 .link-green {
-font-family: Poppins, sans-serif;
-font-weight: 700;
-font-size: 40px;
-font-style: oblique;
-margin-right: 15px;
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  font-style: oblique;
+  margin-right: 15px;
 }
 
-.link-red{
-    color: rgb(172, 7, 45);
+.link-red {
+  color: rgb(172, 7, 45);
 }
 
-.link-blue{
-    color: #6B77E5;
+.link-blue {
+  color: #6b77e5;
 }
 
-.link-green{
-    color: #04a344;
+.link-green {
+  color: #04a344;
 }
- 
-
->>>>>>> 944b6c3c6bd90d5b067943c08ba99ab821620b04
-
-.wrapper{
-    margin: 0 auto; 
-    max-width: 1200px;
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
 }
-<<<<<<< HEAD
 /* ------------------------------------ */
-=======
 
->>>>>>> 944b6c3c6bd90d5b067943c08ba99ab821620b04
-.consulting{
-    max-width: 692px;
-    margin: 0 auto 150px;
+.consulting {
+  max-width: 692px;
+  margin: 0 auto 150px;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 944b6c3c6bd90d5b067943c08ba99ab821620b04
-.consulting 
-h2,
+.consulting h2,
 h3,
-h4{
-<<<<<<< HEAD
-    font-family: "Poppins", sans-serif;
-=======
-    font-family: Poppins, sans-serif;
->>>>>>> 944b6c3c6bd90d5b067943c08ba99ab821620b04
-    font-weight: 600;
-    line-height: 1.27;
-    font-size: 30px;
-    color: #37393F;
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  line-height: 1.27;
+  font-size: 30px;
+  color: #37393f;
 }
-h2{
-    text-transform: capitalize;
-    font-size: 30px;
+h2 {
+  text-transform: capitalize;
+  font-size: 30px;
 }
-h3{
-    font-size: 25px; 
+h3 {
+  font-size: 25px;
 }
-h4{
-    font-size: 20px;
+h4 {
+  font-size: 20px;
 }
-<<<<<<< HEAD
-.text{
-    line-height: 1.46;
-    text-align: justify;
-    margin-bottom: 40px;
-=======
+.text {
+  line-height: 1.46;
+  text-align: justify;
+  margin-bottom: 40px;
+}
 .block-why {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
-.text{
-    line-height: 1.46;
-    text-align: justify;
->>>>>>> 944b6c3c6bd90d5b067943c08ba99ab821620b04
+.text {
+  line-height: 1.46;
+  text-align: justify;
 }
 .block-why .lead {
-    color: #6B77E5;
-    margin-bottom: 12px;
+  color: #6b77e5;
+  margin-bottom: 12px;
 }
-.block-list h4{
-    color: #40DDB6;
+.block-list h4 {
+  color: #40ddb6;
 }
 .main-photo {
-<<<<<<< HEAD
-    margin-bottom: 37px;
-    max-width: 100%;
+  margin-bottom: 37px;
+  max-width: 100%;
 }
 .title {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 }
-.block-list{
-    font-size: 0;
+.block-list {
+  font-size: 0;
 }
 .list-photo {
-    margin-right: 29px;
-    width: 331px;
+  margin-right: 29px;
+  width: 331px;
 }
-.inline-block{
-    display: inline-block;
-    font-size: 18px;
-    width: 332px;
-=======
-    padding: 10px 12px 13px;
-    margin-bottom: 24px;
+.inline-block {
+  display: inline-block;
+  font-size: 18px;
+  width: 332px;
+  padding: 10px 12px 13px;
+  margin-bottom: 24px;
 }
 .consulting .title {
-    margin-bottom: 3px;
+  margin-bottom: 3px;
 }
 .text-why {
-    margin-bottom: 42px;
+  margin-bottom: 42px;
 }
 
 .list-photo {
-    margin-right: 29px;
+  margin-right: 29px;
 }
-.inline-block{
-    display: inline-block;
->>>>>>> 944b6c3c6bd90d5b067943c08ba99ab821620b04
+.inline-block {
+  display: inline-block;
 }
 .consulting .subtitle {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .block-list .lead {
-    margin-bottom: 21px;
+  margin-bottom: 21px;
 }
 .list-item {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 /* ------------------------------ */
-.jewellery{
-    max-width: 1169px;
-    margin: 0 auto 150px;
-    font-size: 0;
+.jewellery {
+  max-width: 1169px;
+  margin: 0 auto 150px;
+  font-size: 0;
 }
 
-.description{
-    display: inline-block;
-    max-width: 563px;
-    margin-right: 38px;
+.description {
+  display: inline-block;
+  max-width: 563px;
+  margin-right: 38px;
 }
-.foto{
-    display: inline-block;
-    max-width: 568px;
-    font-size: 0;  
-    vertical-align: top; 
+.foto {
+  display: inline-block;
+  max-width: 568px;
+  font-size: 0;
+  vertical-align: top;
 }
-.foto-left{
-    margin-right: 22px;
-
-}
-
-.jewellery h3{
-    font-size: 28px;
-    color: #D06B00;
-    text-transform: uppercase;
-    margin-bottom: 13px;
-
+.foto-left {
+  margin-right: 22px;
 }
 
-.jewellery h1{
-    line-height: 1.47;
-<<<<<<< HEAD
-    font-family: "DM Serif Text";
-=======
-    font-family: DM Serif Text;
->>>>>>> 944b6c3c6bd90d5b067943c08ba99ab821620b04
-    font-size: 59px;
-    color: #0E333D;
-    margin-bottom: 25px;
+.jewellery h3 {
+  font-size: 28px;
+  color: #d06b00;
+  text-transform: uppercase;
+  margin-bottom: 13px;
 }
-.jewellery__text{
-    font-size: 20px;
-    color: #474747;
-    line-height: 1.8;
+
+.jewellery h1 {
+  line-height: 1.47;
+  font-family: "DM Serif Text";
+  font-family: DM Serif Text;
+  font-size: 59px;
+  color: #0e333d;
+  margin-bottom: 25px;
+}
+.jewellery__text {
+  font-size: 20px;
+  color: #474747;
+  line-height: 1.8;
 }
 /* ============================ */
-.article{
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-    font-family: "Sofia Sans Condensed", serif;
-    color: darkblue;
-    line-height: 1.3;
+.article {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Sofia Sans Condensed", serif;
+  color: darkblue;
+  line-height: 1.3;
 }
 
-.article__title{
-    font-weight: 600;
-    font-style: italic;
-    font-size: 30px;
-    text-transform: none;
-    text-decoration: underline;
-    text-shadow:2px 2px 4px #7ebed0, -2px -2px 4px #8f7676;
-    margin-bottom: 20px;
+.article__title {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 30px;
+  text-transform: none;
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px #7ebed0, -2px -2px 4px #8f7676;
+  margin-bottom: 20px;
 }
 
-.article__title span{
-    color: #952545;
+.article__title span {
+  color: #952545;
 }
-.accent{
-    font-weight: 600;
-    font-size: 24px;
-    color: #D06B00;
-    margin-bottom: 12px;
-}
-
-.article__text{
-    text-align: justify;
+.accent {
+  font-weight: 600;
+  font-size: 24px;
+  color: #d06b00;
+  margin-bottom: 12px;
 }
 
-.article 
-div,
-<<<<<<< HEAD
-=======
+.article__text {
+  text-align: justify;
+}
+
+.article div,
 ul,
->>>>>>> 944b6c3c6bd90d5b067943c08ba99ab821620b04
-img, 
-h3{
-    margin-bottom: 20px;
+img,
+h3 {
+  margin-bottom: 20px;
 }
 
-.article .list-item{
-    margin-bottom: 5px;
-    text-align: left;
-    font-style: italic;
-    color: #04a344;
-    text-decoration: underline;
+.article .list-item {
+  margin-bottom: 5px;
+  text-align: left;
+  font-style: italic;
+  color: #04a344;
+  text-decoration: underline;
 }
 
-.article__subtitle{
-<<<<<<< HEAD
-    font-family: "Poppins", sans-serif;
-=======
-    font-family: Poppins, sans-serif;
->>>>>>> 944b6c3c6bd90d5b067943c08ba99ab821620b04
-    color: rgb(171, 67, 215);
-    text-shadow:2px 2px 4px #c8e90f;
+.article__subtitle {
+  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
+  color: rgb(171, 67, 215);
+  text-shadow: 2px 2px 4px #c8e90f;
 }
