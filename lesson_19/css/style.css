@@ -36,25 +36,23 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  column-gap: 30px;
+  column-gap: 20px;
   min-height: 108px;
 }
-.header__logo {
-}
 .menu {
+  min-width: 490px;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   flex: 0 1 auto;
-  column-gap: 40px;
-}
-.menu__item:hover {
-
+  gap: 5px 40px;
 }
 .menu__link {
   color: #807d7e;
   font-family: "Causten";
   font-size: 22px;
   font-weight: 500;
-    position: relative;
+  position: relative;
   text-decoration: none;
   transition: color 0.3s;
   padding-bottom: 5px;
@@ -63,26 +61,19 @@ body {
   color: #3c4242;
   font-weight: 700;
 }
-
-.menu__link {
-
-}
-
 .menu__link::before {
   content: "";
   position: absolute;
   width: 0;
-  height: 2px; /* Товщина підкреслення */
+  height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #807d7e; /* Колір підкреслення */
-  transition: width 0.3s; /* Плавна зміна ширини підкреслення */
+  background-color: #807d7e;
+  transition: width 0.3s;
 }
 .menu__link:hover::before {
   width: 100%;
 }
-
-
 .header__form {
   position: relative;
   display: flex;
@@ -91,6 +82,7 @@ body {
   flex: 0 1 287px;
 }
 .header__input {
+  width: 100%;
   background-color: #f6f6f6;
   border-radius: 8px;
   font-size: 18px;
@@ -130,17 +122,23 @@ body {
 .actions-header__item {
   background-color: #f6f6f6;
   border-radius: 8px;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .actions-header__link {
   padding: 12px;
 }
 .actions-header__item .actions-header__link img {
-  transition: transform .3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
-.actions-header__item:hover .actions-header__link img{
+.actions-header__item:hover .actions-header__link img {
   transform: scale(1.3);
 }
 .actions-header__item:hover {
   box-shadow: 0 0 5px rgb(178, 177, 178);
+}
+
+@media (max-width: 975px) {
+  .menu {
+    display: none;
+  }
 }
