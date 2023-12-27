@@ -27,7 +27,6 @@ body {
 .footer {
   height: 200px;
 }
-
 /* ================================================ */
 .header {
   border-bottom: 1px solid #bebcbd;
@@ -136,7 +135,6 @@ body {
 .actions-header__item:hover {
   box-shadow: 0 0 5px rgb(178, 177, 178);
 }
-
 @media (max-width: 975px) {
   .menu {
     display: none;
